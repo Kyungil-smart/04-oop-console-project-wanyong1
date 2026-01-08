@@ -12,6 +12,6 @@ class Program
         gameManager.Run();
 
 
-        //d연동확인ㅇㄻㄴㅇㄻㄴffdsafasdfsadfsadfasdfasdfas
+        //dfa
     }
 }
