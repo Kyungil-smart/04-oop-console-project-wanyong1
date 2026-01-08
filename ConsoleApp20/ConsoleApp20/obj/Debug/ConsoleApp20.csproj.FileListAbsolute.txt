@@ -1,0 +1,8 @@
+C:\Users\chy70\Documents\GitHub\04-oop-console-project-wanyong1\ConsoleApp20\ConsoleApp20\bin\Debug\ConsoleApp20.exe.config
+C:\Users\chy70\Documents\GitHub\04-oop-console-project-wanyong1\ConsoleApp20\ConsoleApp20\bin\Debug\ConsoleApp20.exe
+C:\Users\chy70\Documents\GitHub\04-oop-console-project-wanyong1\ConsoleApp20\ConsoleApp20\bin\Debug\ConsoleApp20.pdb
+C:\Users\chy70\Documents\GitHub\04-oop-console-project-wanyong1\ConsoleApp20\ConsoleApp20\obj\Debug\ConsoleApp20.csproj.AssemblyReference.cache
+C:\Users\chy70\Documents\GitHub\04-oop-console-project-wanyong1\ConsoleApp20\ConsoleApp20\obj\Debug\ConsoleApp20.csproj.CoreCompileInputs.cache
+C:\Users\chy70\Documents\GitHub\04-oop-console-project-wanyong1\ConsoleApp20\ConsoleApp20\obj\Debug\ConsoleApp20.exe
+C:\Users\chy70\Documents\GitHub\04-oop-console-project-wanyong1\ConsoleApp20\ConsoleApp20\obj\Debug\ConsoleApp20.pdb
+C:\Users\chy70\Documents\GitHub\04-oop-console-project-wanyong1\ConsoleApp20\ConsoleApp20\obj\Debug\ConsoleApp20.exe.config

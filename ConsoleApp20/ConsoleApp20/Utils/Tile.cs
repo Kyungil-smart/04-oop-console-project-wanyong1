@@ -10,6 +10,7 @@ public struct Tile
 {
     // 타일 위에 뭐가 올라와있는지?
     public GameObject OnTileObject { get; set; }
+    public bool isWall;
     // 타일 위에 올라서면 발생해야 하는 이벤트
     public event Action OnStepPlayer;
     // 자신의 좌표
@@ -22,6 +23,7 @@ public struct Tile
         Position = position;
         OnTileObject = null;
         OnStepPlayer = null;
+        isWall = false;
     }
 
     public void Print()

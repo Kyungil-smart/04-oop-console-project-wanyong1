@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="GameObjects\GameObject.cs" />
     <Compile Include="GameObjects\Item.cs" />
+    <Compile Include="GameObjects\ManaPotion.cs" />
     <Compile Include="GameObjects\PlayerCharacter.cs" />
     <Compile Include="GameObjects\Potion.cs" />
     <Compile Include="Managers\GameManager.cs" />

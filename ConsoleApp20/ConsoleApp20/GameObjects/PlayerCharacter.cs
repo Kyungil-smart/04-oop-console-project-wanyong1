@@ -10,7 +10,11 @@ public class PlayerCharacter : GameObject
     public ObservableProperty<int> Mana = new ObservableProperty<int>(5);
     private string _healthGauge;
     private string _manaGauge;
-    
+
+    private const int HUD_X = 1; // 추가
+    private const int HUD_Y = 1; // 추가
+
+
     public Tile[,] Field { get; set; }
     private Inventory _inventory;
     public bool IsActiveControl { get; private set; }
@@ -66,6 +70,10 @@ public class PlayerCharacter : GameObject
         {
             Health.Value--;
         }
+        if (InputManager.GetKey(ConsoleKey.Spacebar))
+        {
+            Mana.Value--;
+        }
     }
 
     public void HandleControl()
@@ -81,9 +89,19 @@ public class PlayerCharacter : GameObject
         
         Vector current = Position;
         Vector nextPos = Position + direction;
-        
+
         // 1. 맵 바깥은 아닌지?
+        if (nextPos.X < 0 || nextPos.Y < 0 || nextPos.X >= Field.GetLength(1) || nextPos.Y >= Field.GetLength(0))
+        {
+            return;
+        }
         // 2. 벽인지?
+        Tile nextTile = Field[nextPos.Y, nextPos.X];
+
+        if (nextTile.isWall)
+        {
+            return;
+        }
 
         GameObject nextTileObject = Field[nextPos.Y, nextPos.X].OnTileObject;
 
@@ -114,13 +132,35 @@ public class PlayerCharacter : GameObject
 
     public void DrawManaGauge()
     {
-        Console.SetCursorPosition(Position.X - 2, Position.Y - 1);
-        _healthGauge.Print(ConsoleColor.Blue);
+        //Console.SetCursorPosition(Position.X - 2, Position.Y - 1);
+        //_healthGauge.Print(ConsoleColor.Blue);
+        int x = 0;
+        int y = Console.WindowHeight - 1;
+
+        if (x < 0 || y < 0 ||
+            x >= Console.WindowWidth ||
+            y >= Console.WindowHeight)
+            return;
+
+        Console.SetCursorPosition(x, y);
+        "MP ".Print(ConsoleColor.White);
+        _manaGauge.Print(ConsoleColor.Blue);
     }
 
     public void DrawHealthGauge()
     {
-        Console.SetCursorPosition(Position.X - 2, Position.Y - 2);
+        //Console.SetCursorPosition(Position.X - 2, Position.Y - 2);
+        //_healthGauge.Print(ConsoleColor.Red);
+        int x = 0;
+        int y = Console.WindowHeight -2;
+
+        if (x < 0 || y < 0 ||
+            x >= Console.WindowWidth ||
+            y >= Console.WindowHeight)
+            return;
+
+        Console.SetCursorPosition(x, y);
+        "HP ".Print(ConsoleColor.White);
         _healthGauge.Print(ConsoleColor.Red);
     }
 
@@ -151,19 +191,19 @@ public class PlayerCharacter : GameObject
         switch (mana)
         {
             case 5:
-                _healthGauge = "■■■■■";
+                _manaGauge = "■■■■■";
                 break;
             case 4:
-                _healthGauge = "■■■■□";
+                _manaGauge = "■■■■□";
                 break;
             case 3:
-                _healthGauge = "■■■□□";
+                _manaGauge = "■■■□□";
                 break;
             case 2:
-                _healthGauge = "■■□□□";
+                _manaGauge = "■■□□□";
                 break;
             case 1:
-                _healthGauge = "■□□□□";
+                _manaGauge = "■□□□□";
                 break;
         }
     }
@@ -171,5 +211,9 @@ public class PlayerCharacter : GameObject
     public void Heal(int value)
     {
         Health.Value += value;
+    }
+    public void ManaHeal(int value)
+    {
+        Mana.Value += value;
     }
 }
