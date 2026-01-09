@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleApp20.Scenes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -41,6 +42,7 @@ public class GameManager
         SceneManager.AddScene("Title", new TitleScene());
         SceneManager.AddScene("Story", new StoryScene());
         SceneManager.AddScene("Town", new TownScene(_player));
+        SceneManager.AddScene("Manual", new ManualScene());
         SceneManager.AddScene("Log", new LogScene());
         
         SceneManager.Change("Title");

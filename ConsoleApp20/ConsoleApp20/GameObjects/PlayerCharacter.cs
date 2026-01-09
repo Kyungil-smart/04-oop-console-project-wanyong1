@@ -1,7 +1,10 @@
-﻿using System;
+﻿using ConsoleApp20.Utils;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 public class PlayerCharacter : GameObject
@@ -38,7 +41,7 @@ public class PlayerCharacter : GameObject
         {
             HandleControl();
         }
-        
+
         if (InputManager.GetKey(ConsoleKey.UpArrow))
         {
             Move(Vector.Up);
@@ -72,7 +75,13 @@ public class PlayerCharacter : GameObject
         }
         if (InputManager.GetKey(ConsoleKey.Spacebar))
         {
+            Attack(1);
+
+        }
+        if (InputManager.GetKey(ConsoleKey.A))
+        {
             Mana.Value--;
+
         }
     }
 
@@ -86,7 +95,7 @@ public class PlayerCharacter : GameObject
     private void Move(Vector direction)
     {
         if (Field == null || !IsActiveControl) return;
-        
+
         Vector current = Position;
         Vector nextPos = Position + direction;
 
@@ -123,6 +132,7 @@ public class PlayerCharacter : GameObject
         DrawHealthGauge();
         DrawManaGauge();
         _inventory.Render();
+
     }
 
     public void AddItem(Item item)
@@ -152,7 +162,7 @@ public class PlayerCharacter : GameObject
         //Console.SetCursorPosition(Position.X - 2, Position.Y - 2);
         //_healthGauge.Print(ConsoleColor.Red);
         int x = 0;
-        int y = Console.WindowHeight -2;
+        int y = Console.WindowHeight - 2;
 
         if (x < 0 || y < 0 ||
             x >= Console.WindowWidth ||
@@ -216,4 +226,42 @@ public class PlayerCharacter : GameObject
     {
         Mana.Value += value;
     }
+    public void Attack(int damage)
+    {
+        if (Field == null) return;
+        List<(int x, int y)> redraw = new List<(int, int)>();
+        int height = Field.GetLength(0);
+        int width = Field.GetLength(1);
+
+        for (int dy = -1; dy <= 1; dy++)
+        {
+            
+            for (int dx = -1; dx <= 1; dx++)
+            {
+                
+                if (dx == 0 && dy == 0) continue;
+
+                int tx = Position.X + dx;
+                int ty = Position.Y + dy;
+
+                if (tx < 0 || tx >= width || ty < 0 || ty >= height) continue;
+
+                redraw.Add((tx, ty));
+                Console.SetCursorPosition(tx, ty);
+                '*'.Print();
+
+                var target = Field[ty, tx].OnTileObject;
+                
+                if (target is IDamageable d)
+                {
+                    d.TakeDamage(damage); //
+                }
+            }
+        }
+        Thread.Sleep(200);
+    }
+
+    
 }
+
+

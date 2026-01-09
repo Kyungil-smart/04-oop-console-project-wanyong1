@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleApp20.GameObjects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -38,8 +39,9 @@ public class TownScene : Scene
         _field[3, 5].OnTileObject = new Potion() {Name = "Potion1"};
         _field[2, 15].OnTileObject = new Potion() {Name = "Potion2"};
         _field[7, 3].OnTileObject = new ManaPotion() {Name = "Potion3"};
-        _field[9, 19].OnTileObject = new ManaPotion() {Name = "Potion4"};
-        
+        _field[8, 18].OnTileObject = new ManaPotion() {Name = "Potion4"};
+        _field[4, 15].OnTileObject = new Monster() {_monsterName = "고블린" };
+
         Debug.Log("타운 씬 진입");
     }
 

@@ -18,6 +18,7 @@ public static class InputManager
         ConsoleKey.I,
         ConsoleKey.L,
         ConsoleKey.T,
+        ConsoleKey.A,
         ConsoleKey.Spacebar
     };
 

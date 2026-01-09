@@ -3,87 +3,111 @@
   "WorkspaceRootPath": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|c:\\users\\chy70\\documents\\github\\04-oop-console-project-wanyong1\\consoleapp20\\consoleapp20\\scenes\\townscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|c:\\users\\chy70\\documents\\github\\04-oop-console-project-wanyong1\\consoleapp20\\consoleapp20\\gameobjects\\monster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\gameobjects\\monster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\consoleapp20\\scenes\\townscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\scenes\\townscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\consoleapp20\\gameobjects\\playercharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|c:\\users\\chy70\\documents\\github\\04-oop-console-project-wanyong1\\consoleapp20\\consoleapp20\\utils\\monsterspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\utils\\monsterspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|c:\\users\\chy70\\documents\\github\\04-oop-console-project-wanyong1\\consoleapp20\\consoleapp20\\utils\\monsterremover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\utils\\monsterremover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|c:\\users\\chy70\\documents\\github\\04-oop-console-project-wanyong1\\consoleapp20\\consoleapp20\\gameobjects\\playercharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\gameobjects\\playercharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|c:\\users\\chy70\\documents\\github\\04-oop-console-project-wanyong1\\consoleapp20\\consoleapp20\\gameobjects\\manapotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\gameobjects\\manapotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|c:\\users\\chy70\\documents\\github\\04-oop-console-project-wanyong1\\consoleapp20\\consoleapp20\\utils\\idamageable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\utils\\idamageable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|c:\\users\\chy70\\documents\\github\\04-oop-console-project-wanyong1\\consoleapp20\\consoleapp20\\gameobjects\\potion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\gameobjects\\potion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|c:\\users\\chy70\\documents\\github\\04-oop-console-project-wanyong1\\consoleapp20\\consoleapp20\\utils\\ractangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\utils\\ractangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|c:\\users\\chy70\\documents\\github\\04-oop-console-project-wanyong1\\consoleapp20\\consoleapp20\\utils\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\utils\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|c:\\users\\chy70\\documents\\github\\04-oop-console-project-wanyong1\\consoleapp20\\consoleapp20\\gameobjects\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\gameobjects\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|c:\\users\\chy70\\documents\\github\\04-oop-console-project-wanyong1\\consoleapp20\\consoleapp20\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|c:\\users\\chy70\\documents\\github\\04-oop-console-project-wanyong1\\consoleapp20\\consoleapp20\\managers\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\managers\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|c:\\users\\chy70\\documents\\github\\04-oop-console-project-wanyong1\\consoleapp20\\consoleapp20\\utils\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\utils\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|c:\\users\\chy70\\documents\\github\\04-oop-console-project-wanyong1\\consoleapp20\\consoleapp20\\utils\\textextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\utils\\textextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|c:\\users\\chy70\\documents\\github\\04-oop-console-project-wanyong1\\consoleapp20\\consoleapp20\\scenes\\titlescene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\scenes\\titlescene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|c:\\users\\chy70\\documents\\github\\04-oop-console-project-wanyong1\\consoleapp20\\consoleapp20\\utils\\menulist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\utils\\menulist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|c:\\users\\chy70\\documents\\github\\04-oop-console-project-wanyong1\\consoleapp20\\consoleapp20\\utils\\observableproperty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\utils\\observableproperty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|c:\\users\\chy70\\documents\\github\\04-oop-console-project-wanyong1\\consoleapp20\\consoleapp20\\utils\\debug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\utils\\debug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|c:\\users\\chy70\\documents\\github\\04-oop-console-project-wanyong1\\consoleapp20\\consoleapp20\\utils\\iinteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\consoleapp20\\utils\\iinteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\utils\\iinteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|c:\\users\\chy70\\documents\\github\\04-oop-console-project-wanyong1\\consoleapp20\\consoleapp20\\utils\\vector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\consoleapp20\\utils\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\utils\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\consoleapp20\\utils\\menulist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\utils\\menulist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\consoleapp20\\utils\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\utils\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\consoleapp20\\scenes\\titlescene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\scenes\\titlescene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\consoleapp20\\utils\\observableproperty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\utils\\observableproperty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\consoleapp20\\utils\\ractangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\utils\\ractangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\consoleapp20\\utils\\textextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\utils\\textextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\consoleapp20\\gameobjects\\manapotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\gameobjects\\manapotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\consoleapp20\\utils\\vector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\utils\\vector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|c:\\users\\chy70\\documents\\github\\04-oop-console-project-wanyong1\\consoleapp20\\consoleapp20\\scenes\\storyscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\consoleapp20\\utils\\debug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\utils\\debug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\consoleapp20\\scenes\\storyscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\scenes\\storyscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|c:\\users\\chy70\\documents\\github\\04-oop-console-project-wanyong1\\consoleapp20\\consoleapp20\\scenes\\scene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\consoleapp20\\scenes\\scene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\scenes\\scene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|c:\\users\\chy70\\documents\\github\\04-oop-console-project-wanyong1\\consoleapp20\\consoleapp20\\scenes\\logscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|c:\\users\\chy70\\documents\\github\\04-oop-console-project-wanyong1\\consoleapp20\\consoleapp20\\scenes\\manualscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\scenes\\manualscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\consoleapp20\\scenes\\logscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\scenes\\logscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|c:\\users\\chy70\\documents\\github\\04-oop-console-project-wanyong1\\consoleapp20\\consoleapp20\\gameobjects\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|c:\\users\\chy70\\documents\\github\\04-oop-console-project-wanyong1\\consoleapp20\\consoleapp20\\managers\\scenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\managers\\scenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\consoleapp20\\managers\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\managers\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\consoleapp20\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\consoleapp20\\gameobjects\\potion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\gameobjects\\potion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\consoleapp20\\gameobjects\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\gameobjects\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\consoleapp20\\gameobjects\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\gameobjects\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -94,149 +118,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ManaPotion.cs",
-              "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\GameObjects\\ManaPotion.cs",
-              "RelativeDocumentMoniker": "ConsoleApp20\\GameObjects\\ManaPotion.cs",
-              "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\GameObjects\\ManaPotion.cs",
-              "RelativeToolTip": "ConsoleApp20\\GameObjects\\ManaPotion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T09:03:46.993Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "PlayerCharacter.cs",
               "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\GameObjects\\PlayerCharacter.cs",
               "RelativeDocumentMoniker": "ConsoleApp20\\GameObjects\\PlayerCharacter.cs",
               "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\GameObjects\\PlayerCharacter.cs",
               "RelativeToolTip": "ConsoleApp20\\GameObjects\\PlayerCharacter.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAADwv54AAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAN4AAAAAAAAAAAAUwOQAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-08T07:19:47.728Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Ractangle.cs",
-              "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\Ractangle.cs",
-              "RelativeDocumentMoniker": "ConsoleApp20\\Utils\\Ractangle.cs",
-              "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\Ractangle.cs",
-              "RelativeToolTip": "ConsoleApp20\\Utils\\Ractangle.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T08:34:16.323Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Potion.cs",
-              "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\GameObjects\\Potion.cs",
-              "RelativeDocumentMoniker": "ConsoleApp20\\GameObjects\\Potion.cs",
-              "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\GameObjects\\Potion.cs",
-              "RelativeToolTip": "ConsoleApp20\\GameObjects\\Potion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T08:33:57.6Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TownScene.cs",
               "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Scenes\\TownScene.cs",
               "RelativeDocumentMoniker": "ConsoleApp20\\Scenes\\TownScene.cs",
               "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Scenes\\TownScene.cs",
               "RelativeToolTip": "ConsoleApp20\\Scenes\\TownScene.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA1wCcAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAvwDEAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-08T08:28:30.161Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MonsterRemover.cs",
+              "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\MonsterRemover.cs",
+              "RelativeDocumentMoniker": "ConsoleApp20\\Utils\\MonsterRemover.cs",
+              "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\MonsterRemover.cs",
+              "RelativeToolTip": "ConsoleApp20\\Utils\\MonsterRemover.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwCUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T08:16:32.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "IDamageable.cs",
+              "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\IDamageable.cs",
+              "RelativeDocumentMoniker": "ConsoleApp20\\Utils\\IDamageable.cs",
+              "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\IDamageable.cs",
+              "RelativeToolTip": "ConsoleApp20\\Utils\\IDamageable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T07:28:19.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MonsterSpawner.cs",
+              "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\MonsterSpawner.cs",
+              "RelativeDocumentMoniker": "ConsoleApp20\\Utils\\MonsterSpawner.cs",
+              "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\MonsterSpawner.cs",
+              "RelativeToolTip": "ConsoleApp20\\Utils\\MonsterSpawner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T08:48:37.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IInteractable.cs",
+              "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\IInteractable.cs",
+              "RelativeDocumentMoniker": "ConsoleApp20\\Utils\\IInteractable.cs",
+              "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\IInteractable.cs",
+              "RelativeToolTip": "ConsoleApp20\\Utils\\IInteractable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T08:34:18.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Inventory.cs",
               "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\Inventory.cs",
               "RelativeDocumentMoniker": "ConsoleApp20\\Utils\\Inventory.cs",
               "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\Inventory.cs",
               "RelativeToolTip": "ConsoleApp20\\Utils\\Inventory.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAgwBgAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-08T08:34:18.414Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Item.cs",
-              "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\GameObjects\\Item.cs",
-              "RelativeDocumentMoniker": "ConsoleApp20\\GameObjects\\Item.cs",
-              "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\GameObjects\\Item.cs",
-              "RelativeToolTip": "ConsoleApp20\\GameObjects\\Item.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T08:33:55.662Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Managers\\GameManager.cs",
-              "RelativeDocumentMoniker": "ConsoleApp20\\Managers\\GameManager.cs",
-              "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Managers\\GameManager.cs",
-              "RelativeToolTip": "ConsoleApp20\\Managers\\GameManager.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T08:57:12.846Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "InputManager.cs",
-              "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Managers\\InputManager.cs",
-              "RelativeDocumentMoniker": "ConsoleApp20\\Managers\\InputManager.cs",
-              "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Managers\\InputManager.cs",
-              "RelativeToolTip": "ConsoleApp20\\Managers\\InputManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAbAAAAAAAAAA==",
+              "Title": "MenuList.cs",
+              "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\MenuList.cs",
+              "RelativeDocumentMoniker": "ConsoleApp20\\Utils\\MenuList.cs",
+              "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\MenuList.cs",
+              "RelativeToolTip": "ConsoleApp20\\Utils\\MenuList.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAkwGoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T08:54:52.896Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "TitleScene.cs",
-              "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Scenes\\TitleScene.cs",
-              "RelativeDocumentMoniker": "ConsoleApp20\\Scenes\\TitleScene.cs",
-              "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Scenes\\TitleScene.cs",
-              "RelativeToolTip": "ConsoleApp20\\Scenes\\TitleScene.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T08:34:01.132Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "TextExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\TextExtensions.cs",
-              "RelativeDocumentMoniker": "ConsoleApp20\\Utils\\TextExtensions.cs",
-              "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\TextExtensions.cs",
-              "RelativeToolTip": "ConsoleApp20\\Utils\\TextExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T08:34:15.831Z",
+              "WhenOpened": "2026-01-08T08:34:17.826Z",
               "EditorCaption": ""
             },
             {
@@ -247,74 +232,100 @@
               "RelativeDocumentMoniker": "ConsoleApp20\\Utils\\Tile.cs",
               "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\Tile.cs",
               "RelativeToolTip": "ConsoleApp20\\Utils\\Tile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAwBkAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-08T08:34:15.202Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Debug.cs",
-              "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\Debug.cs",
-              "RelativeDocumentMoniker": "ConsoleApp20\\Utils\\Debug.cs",
-              "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\Debug.cs",
-              "RelativeToolTip": "ConsoleApp20\\Utils\\Debug.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "TitleScene.cs",
+              "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Scenes\\TitleScene.cs",
+              "RelativeDocumentMoniker": "ConsoleApp20\\Scenes\\TitleScene.cs",
+              "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Scenes\\TitleScene.cs",
+              "RelativeToolTip": "ConsoleApp20\\Scenes\\TitleScene.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAA7wCoAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T08:34:19.422Z",
+              "WhenOpened": "2026-01-08T08:34:01.132Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IInteractable.cs",
-              "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\IInteractable.cs",
-              "RelativeDocumentMoniker": "ConsoleApp20\\Utils\\IInteractable.cs",
-              "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\IInteractable.cs",
-              "RelativeToolTip": "ConsoleApp20\\Utils\\IInteractable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T08:34:18.955Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "MenuList.cs",
-              "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\MenuList.cs",
-              "RelativeDocumentMoniker": "ConsoleApp20\\Utils\\MenuList.cs",
-              "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\MenuList.cs",
-              "RelativeToolTip": "ConsoleApp20\\Utils\\MenuList.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T08:34:17.826Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 11,
               "Title": "ObservableProperty.cs",
               "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\ObservableProperty.cs",
               "RelativeDocumentMoniker": "ConsoleApp20\\Utils\\ObservableProperty.cs",
               "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\ObservableProperty.cs",
               "RelativeToolTip": "ConsoleApp20\\Utils\\ObservableProperty.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-08T08:34:16.887Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 12,
+              "Title": "Ractangle.cs",
+              "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\Ractangle.cs",
+              "RelativeDocumentMoniker": "ConsoleApp20\\Utils\\Ractangle.cs",
+              "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\Ractangle.cs",
+              "RelativeToolTip": "ConsoleApp20\\Utils\\Ractangle.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwC0AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T08:34:16.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TextExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\TextExtensions.cs",
+              "RelativeDocumentMoniker": "ConsoleApp20\\Utils\\TextExtensions.cs",
+              "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\TextExtensions.cs",
+              "RelativeToolTip": "ConsoleApp20\\Utils\\TextExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T08:34:15.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ManaPotion.cs",
+              "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\GameObjects\\ManaPotion.cs",
+              "RelativeDocumentMoniker": "ConsoleApp20\\GameObjects\\ManaPotion.cs",
+              "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\GameObjects\\ManaPotion.cs",
+              "RelativeToolTip": "ConsoleApp20\\GameObjects\\ManaPotion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T09:03:46.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "Vector.cs",
               "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\Vector.cs",
               "RelativeDocumentMoniker": "ConsoleApp20\\Utils\\Vector.cs",
               "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\Vector.cs",
               "RelativeToolTip": "ConsoleApp20\\Utils\\Vector.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-08T08:34:13.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Debug.cs",
+              "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\Debug.cs",
+              "RelativeDocumentMoniker": "ConsoleApp20\\Utils\\Debug.cs",
+              "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\Debug.cs",
+              "RelativeToolTip": "ConsoleApp20\\Utils\\Debug.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T08:34:19.422Z",
               "EditorCaption": ""
             },
             {
@@ -325,7 +336,7 @@
               "RelativeDocumentMoniker": "ConsoleApp20\\Scenes\\StoryScene.cs",
               "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Scenes\\StoryScene.cs",
               "RelativeToolTip": "ConsoleApp20\\Scenes\\StoryScene.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-08T08:34:00.308Z",
               "EditorCaption": ""
@@ -338,7 +349,7 @@
               "RelativeDocumentMoniker": "ConsoleApp20\\Scenes\\Scene.cs",
               "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Scenes\\Scene.cs",
               "RelativeToolTip": "ConsoleApp20\\Scenes\\Scene.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-08T08:33:59.764Z",
               "EditorCaption": ""
@@ -346,19 +357,97 @@
             {
               "$type": "Document",
               "DocumentIndex": 19,
+              "Title": "ManualScene.cs",
+              "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Scenes\\ManualScene.cs",
+              "RelativeDocumentMoniker": "ConsoleApp20\\Scenes\\ManualScene.cs",
+              "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Scenes\\ManualScene.cs",
+              "RelativeToolTip": "ConsoleApp20\\Scenes\\ManualScene.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T06:35:14.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "LogScene.cs",
               "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Scenes\\LogScene.cs",
               "RelativeDocumentMoniker": "ConsoleApp20\\Scenes\\LogScene.cs",
               "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Scenes\\LogScene.cs",
               "RelativeToolTip": "ConsoleApp20\\Scenes\\LogScene.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-08T08:33:58.902Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
+              "Title": "SceneManager.cs",
+              "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Managers\\SceneManager.cs",
+              "RelativeDocumentMoniker": "ConsoleApp20\\Managers\\SceneManager.cs",
+              "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Managers\\SceneManager.cs",
+              "RelativeToolTip": "ConsoleApp20\\Managers\\SceneManager.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwCQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T06:25:54.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "InputManager.cs",
+              "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Managers\\InputManager.cs",
+              "RelativeDocumentMoniker": "ConsoleApp20\\Managers\\InputManager.cs",
+              "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Managers\\InputManager.cs",
+              "RelativeToolTip": "ConsoleApp20\\Managers\\InputManager.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAYwBUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T08:54:52.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Managers\\GameManager.cs",
+              "RelativeDocumentMoniker": "ConsoleApp20\\Managers\\GameManager.cs",
+              "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Managers\\GameManager.cs",
+              "RelativeToolTip": "ConsoleApp20\\Managers\\GameManager.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAkwCUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T08:57:12.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Potion.cs",
+              "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\GameObjects\\Potion.cs",
+              "RelativeDocumentMoniker": "ConsoleApp20\\GameObjects\\Potion.cs",
+              "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\GameObjects\\Potion.cs",
+              "RelativeToolTip": "ConsoleApp20\\GameObjects\\Potion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T08:33:57.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\GameObjects\\Item.cs",
+              "RelativeDocumentMoniker": "ConsoleApp20\\GameObjects\\Item.cs",
+              "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\GameObjects\\Item.cs",
+              "RelativeToolTip": "ConsoleApp20\\GameObjects\\Item.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T08:33:55.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "GameObject.cs",
               "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\GameObjects\\GameObject.cs",
               "RelativeDocumentMoniker": "ConsoleApp20\\GameObjects\\GameObject.cs",
@@ -367,6 +456,25 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-08T07:19:44.607Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Monster.cs",
+              "DocumentMoniker": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\GameObjects\\Monster.cs",
+              "RelativeDocumentMoniker": "ConsoleApp20\\GameObjects\\Monster.cs",
+              "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\GameObjects\\Monster.cs",
+              "RelativeToolTip": "ConsoleApp20\\GameObjects\\Monster.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAowBYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T08:08:49.045Z",
               "EditorCaption": ""
             }
           ]

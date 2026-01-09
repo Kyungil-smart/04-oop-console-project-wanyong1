@@ -17,6 +17,7 @@ public class TitleScene : Scene
     {
         _titleMenu = new MenuList();
         _titleMenu.Add("게임 시작", GameStart);
+        _titleMenu.Add("게임 방법", GameManual);
         _titleMenu.Add("크레딧", ViewCredits);
         _titleMenu.Add("게임 종료", GameQuit);
     }
@@ -69,5 +70,9 @@ public class TitleScene : Scene
 
     public void ViewCredits()
     {
+    }
+    public void GameManual()
+    {
+        SceneManager.Change("Manual");
     }
 }
