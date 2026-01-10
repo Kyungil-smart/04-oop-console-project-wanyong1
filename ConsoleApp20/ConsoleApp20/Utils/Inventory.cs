@@ -55,4 +55,15 @@ public class Inventory
         if(!IsActive) return;
         _itemMenu.SelectDown();
     }
+    public bool TrySelectSkill()
+    {
+        if (IsActive) return false; // 인벤토리 켜져있으면 스킬 사용 불가
+        return true;                // 사용 가능
+    }
+
+    public bool TrySelectAttack()
+    {
+        if (IsActive) return false; // 인벤토리 켜져있으면 공격 불가
+        return true;
+    }
 }

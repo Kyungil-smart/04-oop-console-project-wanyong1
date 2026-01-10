@@ -73,16 +73,23 @@ public class PlayerCharacter : GameObject
         {
             Health.Value--;
         }
-        if (InputManager.GetKey(ConsoleKey.Spacebar))
-        {
-            Attack(1);
-
-        }
         if (InputManager.GetKey(ConsoleKey.A))
         {
-            Mana.Value--;
-
+            if (_inventory.TrySelectSkill())
+            {
+                Mana.Value--;
+                // 스킬 로직도 여기서 실행
+            }
         }
+
+        if (InputManager.GetKey(ConsoleKey.Spacebar))
+        {
+            if (_inventory.TrySelectAttack())
+            {
+                Attack(1);
+            }
+        }
+
     }
 
     public void HandleControl()

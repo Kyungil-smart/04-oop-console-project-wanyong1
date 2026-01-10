@@ -12,6 +12,10 @@ public class MenuList
     private Ractangle _outline;
     private int _maxLength;
 
+   
+    //커서 켜고끄기
+    public bool IsCursorVisible { get; set; } = true;
+
     public MenuList(params (string, Action)[] menuTexts)
     {
         if (menuTexts.Length == 0)
@@ -110,7 +114,14 @@ public class MenuList
         {
             y++;
             Console.SetCursorPosition(x + 1, y);
-            
+            //커서 숨김이면 텍스트만 출력
+            if (!IsCursorVisible)
+            {
+                Console.Write("  ");
+                _menus[i].text.Print();
+                continue;
+            }
+
             if (i == _currentIndex)
             {
                 "->".Print(ConsoleColor.Green);

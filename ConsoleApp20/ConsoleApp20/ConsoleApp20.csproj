@@ -56,6 +56,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scenes\LogScene.cs" />
     <Compile Include="Scenes\ManualScene.cs" />
+    <Compile Include="Scenes\PrologueScene.cs" />
     <Compile Include="Scenes\Scene.cs" />
     <Compile Include="Scenes\StoryScene.cs" />
     <Compile Include="Scenes\TitleScene.cs" />

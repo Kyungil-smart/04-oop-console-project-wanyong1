@@ -65,7 +65,7 @@ public class TitleScene : Scene
 
     public void GameStart()
     {
-        SceneManager.Change("Town");
+        SceneManager.Change("PrologueScene");
     }
 
     public void ViewCredits()
