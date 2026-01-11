@@ -47,7 +47,6 @@ namespace ConsoleApp20.Utils
             {
                 field[y, x].OnTileObject = null;
 
-                // 이벤트 해제(메모리/중복 방지)
                 if (_handlers.TryGetValue(monster, out var handler))
                 {
                     monster.OnDead -= handler;

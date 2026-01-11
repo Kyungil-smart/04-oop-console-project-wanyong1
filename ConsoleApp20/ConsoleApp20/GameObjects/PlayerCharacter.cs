@@ -140,22 +140,21 @@ public class PlayerCharacter : GameObject
 
         if (nextTileObject != null)
         {
-            // ✅ NPC(대화 가능 오브젝트)는 통과 불가
             if (nextTileObject is ITalkable)
             {
                 return;
             }
 
-            // ✅ 아이템 같은 상호작용(줍기)은 기존 방식 유지
             if (nextTileObject is IInteractable)
             {
                 (nextTileObject as IInteractable).Interact(this);
             }
         }
 
-            Field[Position.Y, Position.X].OnTileObject = null;
+        Field[Position.Y, Position.X].OnTileObject = null;
         Field[nextPos.Y, nextPos.X].OnTileObject = this;
         Position = nextPos;
+
     }
 
     public void Render()

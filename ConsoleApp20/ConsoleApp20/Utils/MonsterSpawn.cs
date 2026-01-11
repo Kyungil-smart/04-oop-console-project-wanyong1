@@ -26,7 +26,7 @@ namespace ConsoleApp20.Utils
             // 이미 뭔가 있으면 스폰 불가
             if (field[pos.Y, pos.X].OnTileObject != null) return null;
 
-            // Monster(int hp)에서 Symbol='M' 세팅됨 :contentReference[oaicite:1]{index=1}
+            
             var monster = new Monster(hp)
             {
                 Position = pos,

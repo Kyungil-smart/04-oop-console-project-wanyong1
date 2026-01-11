@@ -32,13 +32,13 @@ public class TownScene : Scene
             }
         }
 
-        // ✅ 출구: 마지막 칸
+        // 출구: 마지막 칸
         _exitPos = new Vector(_field.GetLength(1) - 1, _field.GetLength(0) - 1);
 
-        // ✅ 출구칸 벽 해제
+        // 출구칸 벽 해제
         _field[_exitPos.Y, _exitPos.X].isWall = false;
 
-        // ✅ 접근 가능하게 옆칸 2개도 벽 해제 (범위 체크 포함)
+        // 접근 가능하게 옆칸 2개도 벽 해제 (범위 체크 포함)
         if (_exitPos.X - 1 >= 0)
             _field[_exitPos.Y, _exitPos.X - 1].isWall = false;
 

@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp20.Scenes
 {
-    public class FrostScene : Scene
+    public class ForestScene : Scene
     {
         private Tile[,] _field = new Tile[20, 20];
         private PlayerCharacter _player;
-        public FrostScene(PlayerCharacter player) => Init(player);
+        public ForestScene(PlayerCharacter player) => Init(player);
         private Vector _exitPos; // 출구 위치
 
         public void Init(PlayerCharacter player)
