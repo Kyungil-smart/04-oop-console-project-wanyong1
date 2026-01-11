@@ -11,7 +11,7 @@ public class ManaPotion : Item, IInteractable
 
     private void Init()
     {
-        Symbol = 'N';
+        Symbol = '⒨';
     }
 
     public override void Use()

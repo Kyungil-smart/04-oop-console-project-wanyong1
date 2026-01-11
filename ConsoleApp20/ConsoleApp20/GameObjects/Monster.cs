@@ -23,7 +23,7 @@ namespace ConsoleApp20.GameObjects
         public Monster(int hp = 5)
         {
             Hp = hp;
-
+            Init();
         }
 
 

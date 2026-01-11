@@ -8,7 +8,24 @@ using System.Threading.Tasks;
 public class GameManager
 {
     public static bool IsGameOver { get; set; }
-    public const string GameName = "아무튼 RPG";
+    public const string GameName =
+        @"
+
+⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⡃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⡅⠀⠀⠀⠠⠐⠈⠀⠀⠁⠀⠈⠀⠀⠁⠀⠈⠀⠀⠁⠀⠈⠀⠀⠐⠀⠀⠂⠀⠐⠀⠀⠂⠀⠐⠀⠀⠂⠀⠐⠀⠀⠂⠀⠐⠀⠀⠂⠀⠀
+⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⢀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⡃⠀⠀⠀⠂⠀⠀⠀⠀⠀⠂⠁⢀⠁⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠁⠀⠀⠂⠈⠀⠀⠐⠀⠈⠀⠀⠐⠀⠈⠀⠀⠐⠀⠈⠀⠀⠐⠀
+⠆⠀⠀⠀⠀⠀⡀⠈⢰⠋⠉⡆⢸⠀⠀⠨⡍⢉⠉⡹⠀⠀⢸⠭⠭⠭⠅⠀⠀⠀⢐⡖⠒⢆⠐⡖⠒⢦⠀⡤⠒⠒⠢⠀⠀⠀⠀⠀⠀⠀
+⡃⠀⠀⠀⠁⠀⠀⠀⢱⡀⠠⡑⢸⠑⠀⢤⠩⣌⠭⡨⠄⠠⢌⢇⠧⡪⡢⠄⠀⠂⢐⡇⠦⡃⠀⡧⡠⠊⢰⠁⠀⠢⡢⠀⠀⠀⠐⠈⠀⠀
+⡅⠀⠀⠀⢀⠀⠀⠀⠀⠈⠉⠀⢸⠀⠀⠀⠀⢸⠀⠀⠀⠀⢸⣀⣀⣀⡀⠀⠀⠀⠐⠅⠀⠣⠐⠅⠀⠀⠀⠓⠤⠤⠎⠀⠀⠀⠀⠀⠀⠀
+⡆⠀⠀⠀⠀⠀⠀⠐⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠁⠀⠀⠀
+⡆⠀⠀⠀⠂⠀⠀⡀⠀⠀⠐⠀⠀⠠⠀⠈⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠐⠀⠀⠂⠁⠀⠀⠀⠀⠀⠀⠀⠄⠀⠀⠄⠀
+⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⢀⠀⠁⠀⠀⠀⠀⠀⠄⠀⠂⠁⠀⠀⠠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠈⠀⠀⠀⠀⠀⠀⠀
+⡃⠀⠀⠀⠈⠀⠀⠠⠐⠀⠀⠀⠀⠁⠀⠀⠂⠀⠀⠀⠀⠀⡀⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠄⠂⠀⠀
+⡅⠀⠀⠀⠠⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⢀⠀⠀⠀⠀⠀⠁⠀⠀⠀⠀⠀⠄⠀⠀⠐⠀⠀⠄⠂⠁⠀⠀⠀⠀⠀⠀⠂⠀⠐⠀⠀⠀⠀⠀
+
+";
     private PlayerCharacter _player;
 
     public void Run()
@@ -45,6 +62,7 @@ public class GameManager
         SceneManager.AddScene("Manual", new ManualScene());
         SceneManager.AddScene("Log", new LogScene());
         SceneManager.AddScene("PrologueScene", new PrologueScene());
+        SceneManager.AddScene("Forest", new FrostScene(_player));
         
         SceneManager.Change("Title");
         

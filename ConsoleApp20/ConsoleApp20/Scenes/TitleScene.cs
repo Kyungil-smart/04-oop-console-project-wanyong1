@@ -51,7 +51,7 @@ public class TitleScene : Scene
         Console.SetCursorPosition(5, 1);
         GameManager.GameName.Print(ConsoleColor.Yellow);
         
-        _titleMenu.Render(8, 5);
+        _titleMenu.Render(50, 5);
     }
 
     public override void Exit()

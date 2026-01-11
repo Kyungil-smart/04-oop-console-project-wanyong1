@@ -113,6 +113,7 @@ public class MenuList
         for(int i = 0; i < _menus.Count; i++)
         {
             y++;
+            if (y >= Console.WindowHeight) return; // ✅ 여기
             Console.SetCursorPosition(x + 1, y);
             //커서 숨김이면 텍스트만 출력
             if (!IsCursorVisible)

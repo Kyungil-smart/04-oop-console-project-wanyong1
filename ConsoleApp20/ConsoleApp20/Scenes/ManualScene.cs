@@ -13,9 +13,13 @@ namespace ConsoleApp20.Scenes
             "이동 : 방향키 (→ ← ↑ ↓)",
             "공격 : Space",
             "인벤토리 : I",
-            "아이템  사용 : Enter",
+            "아이템 사용 및 대사 넘기기 : Enter",
             "",
-            "Enter를 누르면 원래 창으로 돌아갑니다."
+            "Npc 상호작용 : F",
+            "",
+            "Enter를 누르면 원래 창으로 돌아갑니다.",
+            "",
+
         };
 
         public ManualScene() 

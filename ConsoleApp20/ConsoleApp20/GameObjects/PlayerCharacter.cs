@@ -17,6 +17,8 @@ public class PlayerCharacter : GameObject
     private const int HUD_X = 1; // 추가
     private const int HUD_Y = 1; // 추가
 
+    private DialogueBox _dialogue;// 대사창
+
 
     public Tile[,] Field { get; set; }
     private Inventory _inventory;
@@ -33,10 +35,20 @@ public class PlayerCharacter : GameObject
         _healthGauge = "■■■■■";
         _manaGauge = "■■■■■";
         _inventory = new Inventory(this);
+        //대사
+        _dialogue = new DialogueBox();
+        _dialogue.OnOpened += () => IsActiveControl = false;
+        _dialogue.OnClosed += () => IsActiveControl = !_inventory.IsActive;
     }
 
     public void Update()
     {
+        if (_dialogue != null && _dialogue.IsActive)
+        {
+            _dialogue.Update();
+            return;
+        }
+
         if (InputManager.GetKey(ConsoleKey.I))
         {
             HandleControl();
@@ -89,6 +101,11 @@ public class PlayerCharacter : GameObject
                 Attack(1);
             }
         }
+        if (InputManager.GetKey(ConsoleKey.F))
+        {
+            TryTalk();
+        }
+
 
     }
 
@@ -123,13 +140,20 @@ public class PlayerCharacter : GameObject
 
         if (nextTileObject != null)
         {
+            // ✅ NPC(대화 가능 오브젝트)는 통과 불가
+            if (nextTileObject is ITalkable)
+            {
+                return;
+            }
+
+            // ✅ 아이템 같은 상호작용(줍기)은 기존 방식 유지
             if (nextTileObject is IInteractable)
             {
                 (nextTileObject as IInteractable).Interact(this);
             }
         }
 
-        Field[Position.Y, Position.X].OnTileObject = null;
+            Field[Position.Y, Position.X].OnTileObject = null;
         Field[nextPos.Y, nextPos.X].OnTileObject = this;
         Position = nextPos;
     }
@@ -139,6 +163,12 @@ public class PlayerCharacter : GameObject
         DrawHealthGauge();
         DrawManaGauge();
         _inventory.Render();
+        if (_dialogue != null && Field != null)
+        {
+            int x = 1;
+            int y = Field.GetLength(0) + 1; // 맵(10줄) 아래
+            _dialogue.Render(x, y);
+        }
 
     }
 
@@ -267,8 +297,39 @@ public class PlayerCharacter : GameObject
         }
         Thread.Sleep(200);
     }
+    public void StartDialogue(string speaker, string[] pages)
+    {
+        if (_dialogue == null) return;
+        if (_inventory.IsActive) return;      // 인벤 켜져있으면 대화 시작 X (원하면 제거 가능)
+        if (_dialogue.IsActive) return;
 
-    
+        _dialogue.Open(speaker, pages);
+    }
+
+    private void TryTalk()
+    {
+        if (Field == null) return;
+        if (_inventory.IsActive) return;
+
+        Vector[] dirs = { Vector.Up, Vector.Down, Vector.Left, Vector.Right };
+        int h = Field.GetLength(0);
+        int w = Field.GetLength(1);
+
+        foreach (var dir in dirs)
+        {
+            Vector p = Position + dir;
+            if (p.X < 0 || p.Y < 0 || p.X >= w || p.Y >= h) continue;
+
+            GameObject obj = Field[p.Y, p.X].OnTileObject;
+            if (obj is ITalkable talkable)
+            {
+                talkable.Talk(this);
+                return;
+            }
+        }
+    }
+
+
 }
 
 
