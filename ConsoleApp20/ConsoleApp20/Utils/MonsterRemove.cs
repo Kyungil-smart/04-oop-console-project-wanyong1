@@ -57,20 +57,5 @@ namespace ConsoleApp20.Utils
 
             return false;
         }
-
-        public static bool RemoveAt(Tile[,] field, Vector pos)
-        {
-            if (field == null) return false;
-
-            int h = field.GetLength(0);
-            int w = field.GetLength(1);
-
-            if (pos.X < 0 || pos.Y < 0 || pos.X >= w || pos.Y >= h) return false;
-
-            if (field[pos.Y, pos.X].OnTileObject is Monster m)
-                return Remove(field, m);
-
-            return false;
-        }
     }
 }

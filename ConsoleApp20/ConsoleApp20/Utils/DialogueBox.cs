@@ -87,8 +87,6 @@ namespace ConsoleApp20.Utils
             foreach (var line in lines)
                 _menu.Add(line, null);
 
-            _menu.Add("", null);
-
             bool last = (_pages != null && _index == _pages.Length - 1);
             _menu.Add(last ? "Enter : 닫기" : "Enter : 다음", null);
 
