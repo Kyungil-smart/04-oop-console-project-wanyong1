@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp20.Utils
 {
-    public static class MonsterSpawn
+    public  class MonsterSpawn
     {
         // 지정 좌표 스폰
-        public static Monster Spawn(Tile[,] field, Vector pos, int hp = 5, string name = null, bool autoRemoveOnDead = true)
+        public  Monster Spawn(Tile[,] field, Vector pos, int hp = 5, string name = null, bool autoRemoveOnDead = true)
         {
             if (field == null) return null;
 
@@ -42,7 +42,7 @@ namespace ConsoleApp20.Utils
         }
 
         // 랜덤 스폰 (통로 + 빈칸)
-        public static Monster SpawnRandom(Tile[,] field, Random rng, int hp = 5, string name = null, bool autoRemoveOnDead = true, int maxTries = 500)
+        public  Monster SpawnRandom(Tile[,] field, Random rng, int hp = 5, string name = null, bool autoRemoveOnDead = true, int maxTries = 500)
                                           
         {
             if (field == null || rng == null) return null;

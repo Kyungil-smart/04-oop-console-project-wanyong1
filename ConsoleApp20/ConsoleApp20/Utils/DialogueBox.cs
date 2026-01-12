@@ -81,9 +81,6 @@ namespace ConsoleApp20.Utils
             _menu = new MenuList();
             _menu.IsCursorVisible = false;
 
-            _menu.Add($"[{_speaker}]", null);
-            _menu.Add("", null);
-
             // 한 페이지가 여러 줄이면 '\n'로 분리해서 출력
             string page = _pages[_index] ?? "";
             string[] lines = page.Replace("\r\n", "\n").Split('\n');

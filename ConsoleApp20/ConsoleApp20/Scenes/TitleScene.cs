@@ -66,6 +66,7 @@ public class TitleScene : Scene
     public void GameStart()
     {
         SceneManager.Change("PrologueScene");
+        //SceneManager.Change("Forest");
     }
 
     public void ViewCredits()

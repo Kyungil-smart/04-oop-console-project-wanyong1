@@ -53,7 +53,8 @@ public class TownScene : Scene
         _player.Position = new Vector(4, 2);
         _field[_player.Position.Y, _player.Position.X].OnTileObject = _player;
 
-        _field[_exitPos.Y, _exitPos.X].OnTileObject = new ExitDevice();//출구
+        _field[_exitPos.Y, _exitPos.X].OnTileObject = new ExitDevice(true); // ★ 활성 출구
+
 
         //_field[3, 5].OnTileObject = new Potion() { Name = "Potion1" };
         //_field[2, 15].OnTileObject = new Potion() { Name = "Potion2" };
@@ -62,34 +63,39 @@ public class TownScene : Scene
         //_field[4, 15].OnTileObject = new Monster() { _monsterName = "고블린" };
         _field[2, 10].OnTileObject = new Npc()
         {
-            Name = "??????",
+            Name = "마을 촌장",
             Pages = new[]
-       {
-                "…눈을 뜬 모양이군.\n놀랄 필요는 없어. 네가 깨어나길 기다리고 있었지.",
-    "여기가 어디냐고?\n간단히 말하면 ‘밖과 단절된 곳’이야.\n그리고… 네가 여기 온 건 우연이 아니다.",
-    "내가 너를 불렀다.\n너의 ‘의지’가 필요했거든.\n기억이 흐릿한 건 부작용이야. 미안하지만.",
-    "설명은 짧게 하지.\n이곳에서 나가려면 ‘숲’으로 가야 해.\n숲 안쪽에는 미로가 있고, 그 길을 통과해야만 앞으로 나아갈 수 있다.",
-    "미로는 단순한 길찾기가 아니야.\n길이 바뀌기도 하고, 방해하는 것들이 나타날 수도 있지.\n하지만 멈추면 끝이야.",
-    "먼저, 기본적인 방법을 알려주겠다.\n이동 : 방향키(← → ↑ ↓)\n공격 : Space\n인벤토리 : I\n아이템 사용 : Enter",
-    "그리고 중요한 것.\n누군가와 대화하거나 상호작용할 때는\n대상 근처에서 F를 눌러라.",
-    "미로 안에서는 당황하지 마.\nHP와 MP를 확인하고,\n필요하면 포션으로 회복해.\n무리하면 다시 돌아오는 것도 방법이다.",
-    "이제 선택은 네 몫이야.\n숲으로 향해.\n출구를 찾아서… 이곳의 ‘진짜 이유’를 마주해라.",
-    "행운을 빌지.\n…그리고, 여기서의 대화는 이걸로 끝이다."
+            {
+             "마을 촌장 : …처음 보는 얼굴이군.\n이 마을엔 외지인이 드문데, 이런 곳까지 오다니.",
+             "마을 촌장 : 갑작스러운 말이지만…\n무례하게 들리지 않기를 바란다.\n부탁 하나를 해도 되겠나?",
+             "MY : 물론이지, 무슨 일이야?",
+             "마을 촌장 : 며칠 전, 아이 몇 명이 숲 안으로 들어갔네.\n해가 지도록 돌아오지 않았지.\n마을 사람들 모두가 걱정하고 있어.",
+             "그 숲은 평범한 숲이 아니네.\n길이 자주 바뀌고,\n익숙한 사람일수록 더 쉽게 길을 잃는다네.",
+             "그래서… 우리 마을 사람들은\n섣불리 안으로 들어갈 수가 없지.\n오히려 외지인이 더 적합할지도 몰라.",
+             "괜찮다면 부탁하고 싶네.\n숲에 들어가 아이들을 찾아주겠나?",
+             "MY : 알겠어. 내가 찾아볼게.",
+             "무리는 하지 말게.\n위험하다고 느껴지면 돌아와도 된다.\n그 선택을 탓하는 사람은 없을 걸세.",
+             "MY : 걱정하지마 반드시 찾아낼께",
+             "마을 촌장 : 말이라도  고맙네.\n부디 무사히 돌아오게.",
+             " …부탁하겠네."
+
 
         }
         };
 
         Debug.Log("타운 씬 진입");
+
+        _player.OnEnterExit = GoToForest;
     }
 
     public override void Update()
     {
         _player.Update();
-        if (_player.Position.X == _exitPos.X && _player.Position.Y == _exitPos.Y)
-        {
-            SceneManager.Change("Forest");
-            return;
-        }
+        //if (_player.Position.X == _exitPos.X && _player.Position.Y == _exitPos.Y)
+        //{
+        //    SceneManager.Change("Forest");
+        //    return;
+        //}
     }
 
     public override void Render()
@@ -102,6 +108,7 @@ public class TownScene : Scene
     {
         _field[_player.Position.Y, _player.Position.X].OnTileObject = null;
         _player.Field = null;
+        _player.OnEnterExit = null;
     }
 
     private void PrintField()
@@ -114,5 +121,9 @@ public class TownScene : Scene
             }
             Console.WriteLine();
         }
+    }
+    private void GoToForest()
+    {
+        SceneManager.Change("Forest");
     }
 }

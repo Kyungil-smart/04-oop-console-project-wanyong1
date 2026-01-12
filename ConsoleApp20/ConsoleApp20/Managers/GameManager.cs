@@ -63,7 +63,9 @@ public class GameManager
         SceneManager.AddScene("Log", new LogScene());
         SceneManager.AddScene("PrologueScene", new PrologueScene());
         SceneManager.AddScene("Forest", new ForestScene(_player));
-        
+        SceneManager.AddScene("Forest2", new ForestScene2(_player));
+        SceneManager.AddScene("Forest3", new ForestScene3(_player));
+
         SceneManager.Change("Title");
         
         Debug.Log("게임 데이터 초기화 완료");

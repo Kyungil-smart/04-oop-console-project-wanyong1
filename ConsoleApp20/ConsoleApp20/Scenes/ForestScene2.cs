@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp20.Scenes
 {
-    public class ForestScene : Scene
+    public class ForestScene2 : Scene
     {
-        private Tile[,] _field = new Tile[9, 6];
+        private Tile[,] _field = new Tile[10, 10];
         private PlayerCharacter _player;
         private ExitDevice _exit;
         private Vector _exitPos = new Vector(8, 1); // 원하는 출구 좌표로 바꿔
@@ -19,10 +19,11 @@ namespace ConsoleApp20.Scenes
         private int _stepsLeft;
         private MonsterSpawn _monsterSpawn;
 
-        public ForestScene(PlayerCharacter player)
+        public ForestScene2(PlayerCharacter player)
         {
             Init(player);
         }
+
 
         public void Init(PlayerCharacter player)
         {
@@ -52,58 +53,63 @@ namespace ConsoleApp20.Scenes
             _player.OnStepConsumed += HandleStepConsumed;
 
             _player.Field = _field;
-            _player.Position = new Vector(1, 6);
+            _player.Position = new Vector(1, 8);
             _field[_player.Position.Y, _player.Position.X].OnTileObject = _player;
 
-            // PlayerCharacter가 “블록 밀기”를 시도할 때 ForestScene 로직을 쓰도록 연결
+            //  PlayerCharacter가 “블록 밀기”를 시도할 때 ForestScene 로직을 쓰도록 연결
             _player.TryPushBlockHandler = TryPushBlock;
 
             //  여기서부터 너가 원하는 좌표로 블록 배치하면 됨
             // 예시)
-            AddPushBlock(7, 2);
-            AddPushBlock(7, 4);
-            AddPushBlock(6, 4);
-            AddPushBlock(5, 4);
-            AddPushBlock(4, 4);
-            AddPushBlock(3, 4);
-            AddPushBlock(3, 3);
-            AddPushBlock(2, 4);
+            AddPushBlock(2, 1);
             AddPushBlock(1, 4);
-                
-      
+            AddPushBlock(2, 4);
+            AddPushBlock(3, 4);
+            AddPushBlock(1, 5);
+            AddPushBlock(2, 8);
+            AddPushBlock(3, 5);
+            AddPushBlock(6, 5);
+            AddPushBlock(8, 5);
+            AddPushBlock(3, 6);
+            AddPushBlock(1, 7);
+            AddPushBlock(2, 7);
+            AddPushBlock(4, 7);
+            AddPushBlock(7, 2);
+            AddPushBlock(6, 7);
+            AddPushBlock(8, 7);
+            AddPushBlock(3, 8);
+            AddPushBlock(5, 8);
+            AddPushBlock(7, 8);
+            AddPushBlock(8, 2);
 
-            AddPushBlock(12, 4);
-            _monsterSpawn.Spawn(_field, new Vector(7, 2), 5, "늑대");
-            _monsterSpawn.Spawn(_field, new Vector(7, 2), 5, "늑대");
-            _monsterSpawn.Spawn(_field, new Vector(7,5), 5, "늑대");
-            _monsterSpawn.Spawn(_field, new Vector(7, 4), 5, "늑대");
+            _monsterSpawn.Spawn(_field, new Vector(5, 1), 5, "늑대");
+            //_monsterSpawn.Spawn(_field, new Vector(4, 2), 5, "늑대");
+            _monsterSpawn.Spawn(_field, new Vector(5, 3), 5, "늑대");
+            _monsterSpawn.Spawn(_field, new Vector(4, 3), 5, "늑대");
+            _monsterSpawn.Spawn(_field, new Vector(3, 3), 5, "늑대");
+            _monsterSpawn.Spawn(_field, new Vector(6, 3), 5, "늑대");
+            _player.OnEnterExit = GoToForest;
 
-            _field[3, 7].OnTileObject = new Npc()
+
+            _field[1, 4].OnTileObject = new Npc()
             {
-                Name = "길을 잃은 아이 1",
+                Name = "??????",
                 Pages = new[]
                 {
-                "길을 잃은 아이 1 : 살려주세요.",
+                "NPC : 살려주세요.",
+                "NPC : 숲에서 길을 잃었어요",
+                "NPC : 도와주실 수 있나요?",
+                "NPC : 제 친구는 어디에 있나요?",
+                "My : 친구는 이미 마을에 안전하게 도착했어",
+                "NPC : 정말요? 고마워요!",
+                "NPC : 더 깊은 숲으로 가면 친구가 더 있을거에요 그 친구들도 찾아주세요",
+                "(저기 출구가 활성화 되었다 저기로 가야겠어!)"
 
-                "길을 잃은 아이 1 : 저는 이 숲에서 길을 잃었어요.",
-
-                "길을 잃은 아이 1 : 도와주실 수 있나요?",
-                "MY : 당연하지",
-
-                "길을 잃은 아이 1 : 제 친구가 어딘가에 있을 거예요.",
-
-                "길을 잃은 아이 1 : 찾아서 돌아와 주세요 저는 마을로 돌아가 있을께요.",
-                
-                " MY : (저기 출구가 활성화 되었다 저기로 가야겠어!)"
                 }
             };
             _exit = new ExitDevice(false);
             _exit.Position = _exitPos;
             _field[_exitPos.Y, _exitPos.X].OnTileObject = _exit;
-
-            // 2) 플레이어가 ★에 닿으면 다음 씬으로
-            _player.OnEnterExit = GoToForest;
-
 
             // 3) NPC 대화가 열렸다/닫혔다를 ForestScene이 감지
             _player.OnDialogueOpened += HandleDialogueOpened;
@@ -126,7 +132,7 @@ namespace ConsoleApp20.Scenes
         {
             _player.Health.Value = 5;
             _player.Mana.Value = 5;
-            SceneManager.Change("Forest2");
+            SceneManager.Change("Forest3");
         }
 
         public override void Exit()
@@ -154,7 +160,7 @@ namespace ConsoleApp20.Scenes
             }
         }
 
-     
+
         public void AddPushBlock(int x, int y)
         {
             if (!IsInBounds(x, y)) return;
@@ -198,7 +204,7 @@ namespace ConsoleApp20.Scenes
         private void HandleDialogueOpened(string speaker)
         {
             // 이 NPC랑 대화가 시작됐을 때만 “대화 닫히면 출구 활성화” 예약
-            if (speaker == "길을 잃은 아이 1")
+            if (speaker == "??????")
                 _pendingExitActivation = true;
         }
 

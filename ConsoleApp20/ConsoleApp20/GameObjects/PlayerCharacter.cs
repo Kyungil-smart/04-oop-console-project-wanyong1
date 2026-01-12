@@ -1,4 +1,5 @@
-﻿using ConsoleApp20.Utils;
+﻿using ConsoleApp20.GameObjects;
+using ConsoleApp20.Utils;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -11,6 +12,14 @@ public class PlayerCharacter : GameObject
 {
     public ObservableProperty<int> Health = new ObservableProperty<int>(5);
     public ObservableProperty<int> Mana = new ObservableProperty<int>(5);
+
+    public event Action<string> OnDialogueOpened;
+    public event Action OnDialogueClosed;
+    public event Action OnStepConsumed;
+
+    public Action OnEnterExit;
+    public Func<Vector, Vector, bool> TryPushBlockHandler { get; set; }
+
     private string _healthGauge;
     private string _manaGauge;
 
@@ -37,8 +46,17 @@ public class PlayerCharacter : GameObject
         _inventory = new Inventory(this);
         //대사
         _dialogue = new DialogueBox();
-        _dialogue.OnOpened += () => IsActiveControl = false;
-        _dialogue.OnClosed += () => IsActiveControl = !_inventory.IsActive;
+        _dialogue.OnOpened += () =>
+        {
+            IsActiveControl = false;
+            // 열릴 때 speaker는 StartDialogue에서 이벤트로 쏴줄 거라 여기선 생략 가능
+        };
+
+        _dialogue.OnClosed += () =>
+        {
+            IsActiveControl = !_inventory.IsActive;
+            if (OnDialogueClosed != null) OnDialogueClosed();
+        };
     }
 
     public void Update()
@@ -85,20 +103,30 @@ public class PlayerCharacter : GameObject
         {
             Health.Value--;
         }
-        if (InputManager.GetKey(ConsoleKey.A))
-        {
-            if (_inventory.TrySelectSkill())
-            {
-                Mana.Value--;
-                // 스킬 로직도 여기서 실행
-            }
-        }
+        //if (InputManager.GetKey(ConsoleKey.A))
+        //{
+        //    if (_inventory.TrySelectSkill())
+        //    {
+        //        Mana.Value--;
+        //        
+        //    }
+        //}
 
         if (InputManager.GetKey(ConsoleKey.Spacebar))
         {
+            if(Mana.Value <=0)
+            {
+                return;
+            }
+
             if (_inventory.TrySelectAttack())
             {
                 Attack(1);
+            }
+            if (_inventory.TrySelectSkill())
+            {
+                Mana.Value--;
+
             }
         }
         if (InputManager.GetKey(ConsoleKey.F))
@@ -125,37 +153,56 @@ public class PlayerCharacter : GameObject
 
         // 1. 맵 바깥은 아닌지?
         if (nextPos.X < 0 || nextPos.Y < 0 || nextPos.X >= Field.GetLength(1) || nextPos.Y >= Field.GetLength(0))
-        {
             return;
-        }
+
         // 2. 벽인지?
         Tile nextTile = Field[nextPos.Y, nextPos.X];
-
-        if (nextTile.isWall)
-        {
-            return;
-        }
+        if (nextTile.isWall) return;
 
         GameObject nextTileObject = Field[nextPos.Y, nextPos.X].OnTileObject;
-
         if (nextTileObject != null)
         {
-            if (nextTileObject is ITalkable)
+
+            var exit = nextTileObject as ExitDevice;
+            if (exit != null)
             {
+                if (exit.IsActive)
+                {
+                    if (OnEnterExit != null) OnEnterExit();
+                }
                 return;
             }
 
-            if (nextTileObject is IInteractable)
+            // ✅ 블록이면 “밀기” 먼저 시도
+            if (nextTileObject is ConsoleApp20.GameObjects.PushBlock)
             {
+                bool pushed = TryPushBlockHandler != null && TryPushBlockHandler(Position, direction);
+                if (!pushed) return;
+
+                // 밀었으면, 이제 앞칸이 비었는지 다시 확인
+                nextTileObject = Field[nextPos.Y, nextPos.X].OnTileObject;
+                if (nextTileObject != null) return;
+            }
+
+            // ✅ NPC는 통과 불가
+            if (nextTileObject is ITalkable) return;
+
+            // ✅ 아이템 상호작용
+            if (nextTileObject is IInteractable)
                 (nextTileObject as IInteractable).Interact(this);
+            if(nextTileObject is Monster m)
+            {
+                return;
             }
         }
 
         Field[Position.Y, Position.X].OnTileObject = null;
         Field[nextPos.Y, nextPos.X].OnTileObject = this;
         Position = nextPos;
+        if (OnStepConsumed != null) OnStepConsumed();
 
     }
+
 
     public void Render()
     {
@@ -251,6 +298,10 @@ public class PlayerCharacter : GameObject
             case 1:
                 _manaGauge = "■□□□□";
                 break;
+             case 0:
+                _manaGauge = "□□□□□";
+                break;
+
         }
     }
 
@@ -299,9 +350,10 @@ public class PlayerCharacter : GameObject
     public void StartDialogue(string speaker, string[] pages)
     {
         if (_dialogue == null) return;
-        if (_inventory.IsActive) return;      // 인벤 켜져있으면 대화 시작 X (원하면 제거 가능)
+        if (_inventory.IsActive) return;
         if (_dialogue.IsActive) return;
 
+        if (OnDialogueOpened != null) OnDialogueOpened(speaker);
         _dialogue.Open(speaker, pages);
     }
 
@@ -327,6 +379,7 @@ public class PlayerCharacter : GameObject
             }
         }
     }
+
 
 
 }
