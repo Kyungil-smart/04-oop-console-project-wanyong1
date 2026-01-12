@@ -23,8 +23,6 @@ public static class SceneManager
     {
         Change(_prev);
     }
-
-    // 상태 바꾸는 기능
     public static void Change(string key)
     {
         if (!_scenes.ContainsKey(key)) return;

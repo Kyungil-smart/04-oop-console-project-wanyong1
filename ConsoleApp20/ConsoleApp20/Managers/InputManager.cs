@@ -29,7 +29,7 @@ public static class InputManager
         return _current == input;
     }
 
-    // GameManager에서만 호출
+
     public static void GetUserInput()
     {
         ConsoleKey input = Console.ReadKey(true).Key;

@@ -24,7 +24,7 @@ public class TownScene : Scene
                 Vector pos = new Vector(x, y);
                 _field[y, x] = new Tile(pos);
 
-                // 테두리 벽
+
                 if (y == 0 || y == _field.GetLength(0) - 1 || x == 0 || x == _field.GetLength(1) - 1)
                 {
                     _field[y, x].isWall = true;
@@ -32,13 +32,11 @@ public class TownScene : Scene
             }
         }
 
-        // 출구: 마지막 칸
+
         _exitPos = new Vector(_field.GetLength(1) - 1, _field.GetLength(0) - 1);
 
-        // 출구칸 벽 해제
         _field[_exitPos.Y, _exitPos.X].isWall = false;
 
-        // 접근 가능하게 옆칸 2개도 벽 해제 (범위 체크 포함)
         if (_exitPos.X - 1 >= 0)
             _field[_exitPos.Y, _exitPos.X - 1].isWall = false;
 
@@ -53,14 +51,9 @@ public class TownScene : Scene
         _player.Position = new Vector(4, 2);
         _field[_player.Position.Y, _player.Position.X].OnTileObject = _player;
 
-        _field[_exitPos.Y, _exitPos.X].OnTileObject = new ExitDevice(true); // ★ 활성 출구
+        _field[_exitPos.Y, _exitPos.X].OnTileObject = new ExitDevice(true); 
 
 
-        //_field[3, 5].OnTileObject = new Potion() { Name = "Potion1" };
-        //_field[2, 15].OnTileObject = new Potion() { Name = "Potion2" };
-        //_field[7, 3].OnTileObject = new ManaPotion() { Name = "Potion3" };
-        //_field[8, 18].OnTileObject = new ManaPotion() { Name = "Potion4" };
-        //_field[4, 15].OnTileObject = new Monster() { _monsterName = "고블린" };
         _field[2, 10].OnTileObject = new Npc()
         {
             Name = "마을 촌장",
@@ -91,11 +84,6 @@ public class TownScene : Scene
     public override void Update()
     {
         _player.Update();
-        //if (_player.Position.X == _exitPos.X && _player.Position.Y == _exitPos.Y)
-        //{
-        //    SceneManager.Change("Forest");
-        //    return;
-        //}
     }
 
     public override void Render()

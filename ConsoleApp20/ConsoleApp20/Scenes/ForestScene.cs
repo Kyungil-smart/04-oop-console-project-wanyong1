@@ -13,9 +13,9 @@ namespace ConsoleApp20.Scenes
         private Tile[,] _field = new Tile[9, 6];
         private PlayerCharacter _player;
         private ExitDevice _exit;
-        private Vector _exitPos = new Vector(8, 1); // 원하는 출구 좌표로 바꿔
+        private Vector _exitPos = new Vector(8, 1); 
         private bool _pendingExitActivation;
-        private const int STEP_LIMIT = 20; // 원하는 제한 횟수로 바꿔
+        private const int STEP_LIMIT = 20; 
         private int _stepsLeft;
         private MonsterSpawn _monsterSpawn;
 
@@ -35,7 +35,6 @@ namespace ConsoleApp20.Scenes
                     Vector pos = new Vector(x, y);
                     _field[y, x] = new Tile(pos);
 
-                    // 테두리 벽
                     if (y == 0 || y == _field.GetLength(0) - 1 || x == 0 || x == _field.GetLength(1) - 1)
                         _field[y, x].isWall = true;
                 }
@@ -46,8 +45,8 @@ namespace ConsoleApp20.Scenes
 
         public override void Enter()
         {
-            BuildField();              // ✅ 리셋 가능하게 Enter마다 새로 생성
-            _stepsLeft = STEP_LIMIT;    // ✅ 카운트 초기화
+            BuildField();            
+            _stepsLeft = STEP_LIMIT;    
 
             _player.OnStepConsumed += HandleStepConsumed;
 
@@ -55,11 +54,9 @@ namespace ConsoleApp20.Scenes
             _player.Position = new Vector(1, 6);
             _field[_player.Position.Y, _player.Position.X].OnTileObject = _player;
 
-            // PlayerCharacter가 “블록 밀기”를 시도할 때 ForestScene 로직을 쓰도록 연결
             _player.TryPushBlockHandler = TryPushBlock;
 
-            //  여기서부터 너가 원하는 좌표로 블록 배치하면 됨
-            // 예시)
+ 
             AddPushBlock(7, 2);
             AddPushBlock(7, 4);
             AddPushBlock(6, 4);
@@ -101,11 +98,8 @@ namespace ConsoleApp20.Scenes
             _exit.Position = _exitPos;
             _field[_exitPos.Y, _exitPos.X].OnTileObject = _exit;
 
-            // 2) 플레이어가 ★에 닿으면 다음 씬으로
             _player.OnEnterExit = GoToForest;
 
-
-            // 3) NPC 대화가 열렸다/닫혔다를 ForestScene이 감지
             _player.OnDialogueOpened += HandleDialogueOpened;
             _player.OnDialogueClosed += HandleDialogueClosed;
         }
@@ -134,7 +128,6 @@ namespace ConsoleApp20.Scenes
             _field[_player.Position.Y, _player.Position.X].OnTileObject = null;
             _player.Field = null;
 
-            // 씬 나갈 때 핸들러도 정리(안 해도 큰 문제는 없음)
             _player.TryPushBlockHandler = null;
             _player.OnDialogueOpened -= HandleDialogueOpened;
             _player.OnDialogueClosed -= HandleDialogueClosed;
@@ -167,23 +160,19 @@ namespace ConsoleApp20.Scenes
 
         private bool TryPushBlock(Vector playerPos, Vector dir)
         {
-            Vector blockPos = playerPos + dir;      // 플레이어 앞칸(블록 위치)
-            Vector targetPos = blockPos + dir;      // 블록이 밀려갈 칸
+            Vector blockPos = playerPos + dir;      
+            Vector targetPos = blockPos + dir;    
 
-            // 범위 체크
             if (!IsInBounds(blockPos.X, blockPos.Y)) return false;
             if (!IsInBounds(targetPos.X, targetPos.Y)) return false;
 
-            // 앞칸이 블록이 맞는지
             var blockObj = _field[blockPos.Y, blockPos.X].OnTileObject;
             var block = blockObj as PushBlock;
             if (block == null) return false;
 
-            // 블록이 밀려갈 칸이 벽/오브젝트면 실패
             if (_field[targetPos.Y, targetPos.X].isWall) return false;
             if (_field[targetPos.Y, targetPos.X].OnTileObject != null) return false;
 
-            // 실제로 블록 이동
             _field[blockPos.Y, blockPos.X].OnTileObject = null;
             _field[targetPos.Y, targetPos.X].OnTileObject = block;
             block.Position = targetPos;
@@ -197,7 +186,6 @@ namespace ConsoleApp20.Scenes
         }
         private void HandleDialogueOpened(string speaker)
         {
-            // 이 NPC랑 대화가 시작됐을 때만 “대화 닫히면 출구 활성화” 예약
             if (speaker == "길을 잃은 아이 1")
                 _pendingExitActivation = true;
         }
@@ -236,19 +224,18 @@ namespace ConsoleApp20.Scenes
 
         private void RestartLevel()
         {
-            // 체력/마나도 리셋하고 싶으면(원하면 지워도 됨)
+
             _player.Health.Value = 5;
             _player.Mana.Value = 5;
 
-            // 씬 내부 리셋: 기존 구독 정리하고 다시 Enter
+
             Exit();
             Enter();
         }
         private void DrawStepCounter()
         {
             int x = 0;
-            int y = Console.WindowHeight - 3; // HP/MP 위 한 줄
-            if (y < 0) return;
+            int y = Console.WindowHeight - 3; 
 
             Console.SetCursorPosition(x, y);
             $"STEP : {_stepsLeft}/{STEP_LIMIT}   ".Print();

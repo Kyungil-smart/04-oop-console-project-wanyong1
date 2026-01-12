@@ -39,7 +39,7 @@ namespace ConsoleApp20.Scenes
             {
                 _manualMenu.Add(_stroy[i], null);
             }
-            _manualMenu.IsCursorVisible = false; // 커서 숨김
+            _manualMenu.IsCursorVisible = false; 
             _manualMenu.Reset();
         }
 

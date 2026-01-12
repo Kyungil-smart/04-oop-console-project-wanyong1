@@ -36,7 +36,7 @@ namespace ConsoleApp20.GameObjects
             if (Hp <= 0)
             {
                 Hp = 0;
-                OnDead?.Invoke(this);   //  “나 죽었어”만 알림
+                OnDead?.Invoke(this);
             }
         }
     }

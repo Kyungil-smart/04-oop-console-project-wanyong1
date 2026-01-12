@@ -9,15 +9,14 @@ namespace ConsoleApp20.Utils
 {
     public static class MonsterRemove
     {
-        // 같은 몬스터에 여러 번 바인딩해도 중복 제거되도록 핸들러 저장
+
         private static readonly Dictionary<Monster, Action<Monster>> _handlers = new Dictionary<Monster, Action<Monster>>();
 
-        // 죽으면 자동으로 해당 타일에서 제거
+
         public static void BindAutoRemove(Tile[,] field, Monster monster)
         {
             if (field == null || monster == null) return;
 
-            // 기존 핸들러가 있으면 제거
             if (_handlers.TryGetValue(monster, out var oldHandler))
             {
                 monster.OnDead -= oldHandler;
@@ -30,7 +29,7 @@ namespace ConsoleApp20.Utils
             monster.OnDead += handler;
         }
 
-        // 몬스터 인스턴스로 제거
+
         public static bool Remove(Tile[,] field, Monster monster)
         {
             if (field == null || monster == null) return false;
@@ -59,7 +58,6 @@ namespace ConsoleApp20.Utils
             return false;
         }
 
-        // 좌표로 제거(그 칸이 Monster면 제거)
         public static bool RemoveAt(Tile[,] field, Vector pos)
         {
             if (field == null) return false;

@@ -23,10 +23,10 @@ public class PlayerCharacter : GameObject
     private string _healthGauge;
     private string _manaGauge;
 
-    private const int HUD_X = 1; // 추가
-    private const int HUD_Y = 1; // 추가
+    private const int HUD_X = 1; 
+    private const int HUD_Y = 1; 
 
-    private DialogueBox _dialogue;// 대사창
+    private DialogueBox _dialogue;
 
 
     public Tile[,] Field { get; set; }
@@ -44,12 +44,12 @@ public class PlayerCharacter : GameObject
         _healthGauge = "■■■■■";
         _manaGauge = "■■■■■";
         _inventory = new Inventory(this);
+
         //대사
         _dialogue = new DialogueBox();
         _dialogue.OnOpened += () =>
         {
             IsActiveControl = false;
-            // 열릴 때 speaker는 StartDialogue에서 이벤트로 쏴줄 거라 여기선 생략 가능
         };
 
         _dialogue.OnClosed += () =>
@@ -173,7 +173,7 @@ public class PlayerCharacter : GameObject
                 return;
             }
 
-            // ✅ 블록이면 “밀기” 먼저 시도
+            // 밀기
             if (nextTileObject is ConsoleApp20.GameObjects.PushBlock)
             {
                 bool pushed = TryPushBlockHandler != null && TryPushBlockHandler(Position, direction);
@@ -181,15 +181,21 @@ public class PlayerCharacter : GameObject
 
                 // 밀었으면, 이제 앞칸이 비었는지 다시 확인
                 nextTileObject = Field[nextPos.Y, nextPos.X].OnTileObject;
-                if (nextTileObject != null) return;
+                if (nextTileObject != null)
+                {
+                    return;
+                }
             }
 
-            // ✅ NPC는 통과 불가
+            // NPC는 통과 불가
             if (nextTileObject is ITalkable) return;
 
-            // ✅ 아이템 상호작용
+            // 아이템 상호작용
             if (nextTileObject is IInteractable)
+            {
                 (nextTileObject as IInteractable).Interact(this);
+            }
+
             if(nextTileObject is Monster m)
             {
                 return;
@@ -242,8 +248,7 @@ public class PlayerCharacter : GameObject
 
     public void DrawHealthGauge()
     {
-        //Console.SetCursorPosition(Position.X - 2, Position.Y - 2);
-        //_healthGauge.Print(ConsoleColor.Red);
+
         int x = 0;
         int y = Console.WindowHeight - 2;
 
@@ -275,6 +280,9 @@ public class PlayerCharacter : GameObject
                 break;
             case 1:
                 _healthGauge = "■□□□□";
+                break;
+            case 0:
+                _healthGauge = "□□□□□";
                 break;
         }
     }
@@ -341,7 +349,7 @@ public class PlayerCharacter : GameObject
                 
                 if (target is IDamageable d)
                 {
-                    d.TakeDamage(damage); //
+                    d.TakeDamage(damage); 
                 }
             }
         }
