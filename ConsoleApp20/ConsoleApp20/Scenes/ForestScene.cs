@@ -70,10 +70,10 @@ namespace ConsoleApp20.Scenes
       
 
             AddPushBlock(12, 4);
-            _monsterSpawn.Spawn(_field, new Vector(7, 2), 5, "늑대");
-            _monsterSpawn.Spawn(_field, new Vector(7, 2), 5, "늑대");
-            _monsterSpawn.Spawn(_field, new Vector(7,5), 5, "늑대");
-            _monsterSpawn.Spawn(_field, new Vector(7, 4), 5, "늑대");
+            _monsterSpawn.Spawn(_field, new Vector(7, 2),5);
+            _monsterSpawn.Spawn(_field, new Vector(7, 2),5);
+            _monsterSpawn.Spawn(_field, new Vector(7, 5),5);
+            _monsterSpawn.Spawn(_field, new Vector(7, 4),5);
 
             _field[3, 7].OnTileObject = new Npc()
             {
@@ -102,6 +102,8 @@ namespace ConsoleApp20.Scenes
 
             _player.OnDialogueOpened += HandleDialogueOpened;
             _player.OnDialogueClosed += HandleDialogueClosed;
+
+            _player.OnRestartRequested += RestartLevel;
         }
 
         public override void Update()
@@ -133,7 +135,7 @@ namespace ConsoleApp20.Scenes
             _player.OnDialogueClosed -= HandleDialogueClosed;
             _player.OnEnterExit = null;
             _player.OnStepConsumed -= HandleStepConsumed;
-
+            _player.OnRestartRequested -= RestartLevel;
         }
 
         private void PrintField()

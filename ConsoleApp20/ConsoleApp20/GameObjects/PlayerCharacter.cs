@@ -27,10 +27,13 @@ public class PlayerCharacter : GameObject
     private const int HUD_Y = 1; 
 
     private DialogueBox _dialogue;
+    public event Action OnRestartRequested;
+
 
 
     public Tile[,] Field { get; set; }
     private Inventory _inventory;
+
     public bool IsActiveControl { get; private set; }
 
     public PlayerCharacter() => Init();
@@ -132,7 +135,14 @@ public class PlayerCharacter : GameObject
         if (InputManager.GetKey(ConsoleKey.F))
         {
             TryTalk();
+            
         }
+        if (InputManager.GetKey(ConsoleKey.R))
+        {
+            OnRestartRequested?.Invoke();
+            return;
+        }
+
 
 
     }

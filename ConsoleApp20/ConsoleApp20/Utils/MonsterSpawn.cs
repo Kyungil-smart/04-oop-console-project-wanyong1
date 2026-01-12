@@ -10,7 +10,7 @@ namespace ConsoleApp20.Utils
     public  class MonsterSpawn
     {
         // 지정 좌표 스폰
-        public  Monster Spawn(Tile[,] field, Vector pos, int hp = 5, string name = null, bool autoRemoveOnDead = true)
+        public  Monster Spawn(Tile[,] field, Vector pos, int hp = 5, bool autoRemoveOnDead = true)
         {
             if (field == null) return null;
 
@@ -27,7 +27,6 @@ namespace ConsoleApp20.Utils
             var monster = new Monster(hp)
             {
                 Position = pos,
-                _monsterName = name
             };
 
             field[pos.Y, pos.X].OnTileObject = monster;

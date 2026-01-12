@@ -15,7 +15,7 @@ namespace ConsoleApp20.Scenes
         private ExitDevice _exit;
         private Vector _exitPos = new Vector(8, 1); 
         private bool _pendingExitActivation;
-        private const int STEP_LIMIT = 20; 
+        private const int STEP_LIMIT = 21; 
         private int _stepsLeft;
         private MonsterSpawn _monsterSpawn;
 
@@ -53,44 +53,50 @@ namespace ConsoleApp20.Scenes
             _player.OnStepConsumed += HandleStepConsumed;
 
             _player.Field = _field;
-            _player.Position = new Vector(1, 8);
+            _player.Position = new Vector(8, 8);
             _field[_player.Position.Y, _player.Position.X].OnTileObject = _player;
 
           
             _player.TryPushBlockHandler = TryPushBlock;
+            _monsterSpawn.Spawn(_field, new Vector(7, 5), 5);
+            _monsterSpawn.Spawn(_field, new Vector(8, 5), 5);
+            _monsterSpawn.Spawn(_field, new Vector(1, 2), 5);
+            _monsterSpawn.Spawn(_field, new Vector(2, 1), 5);
 
-      
-            AddPushBlock(2, 1);
+
+
+
+
+            AddPushBlock(5, 1);
+            AddPushBlock(6, 2);
+            AddPushBlock(8, 2);
+            AddPushBlock(6, 3);
             AddPushBlock(1, 4);
             AddPushBlock(2, 4);
-            AddPushBlock(3, 4);
-            AddPushBlock(1, 5);
-            AddPushBlock(2, 8);
-            AddPushBlock(3, 5);
-            AddPushBlock(6, 5);
-            AddPushBlock(8, 5);
-            AddPushBlock(3, 6);
-            AddPushBlock(1, 7);
-            AddPushBlock(2, 7);
+            AddPushBlock(6, 2);
+            AddPushBlock(4, 3);
+            AddPushBlock(3, 3);
+            AddPushBlock(2, 3);
+            AddPushBlock(4, 4);
+            AddPushBlock(5, 4);
             AddPushBlock(4, 7);
-            AddPushBlock(7, 2);
+            AddPushBlock(4, 6);
+            AddPushBlock(5, 5);
+            AddPushBlock(3, 5);
+            AddPushBlock(5, 6);
+            AddPushBlock(5, 7);
             AddPushBlock(6, 7);
+            AddPushBlock(7, 7);
             AddPushBlock(8, 7);
-            AddPushBlock(3, 8);
-            AddPushBlock(5, 8);
+            AddPushBlock(4, 8);
             AddPushBlock(7, 8);
-            AddPushBlock(8, 2);
+            AddPushBlock(8, 3);
 
-            _monsterSpawn.Spawn(_field, new Vector(5, 1), 5, "늑대");
-       
-            _monsterSpawn.Spawn(_field, new Vector(5, 3), 5, "늑대");
-            _monsterSpawn.Spawn(_field, new Vector(4, 3), 5, "늑대");
-            _monsterSpawn.Spawn(_field, new Vector(3, 3), 5, "늑대");
-            _monsterSpawn.Spawn(_field, new Vector(6, 3), 5, "늑대");
+
             _player.OnEnterExit = GoToForest;
 
 
-            _field[1, 4].OnTileObject = new Npc()
+            _field[1, 1].OnTileObject = new Npc()
             {
                 Name = "길을 잃은 소년",
                 Pages = new[]
@@ -113,6 +119,7 @@ namespace ConsoleApp20.Scenes
        
             _player.OnDialogueOpened += HandleDialogueOpened;
             _player.OnDialogueClosed += HandleDialogueClosed;
+            _player.OnRestartRequested += RestartLevel;
         }
 
         public override void Update()
@@ -131,7 +138,7 @@ namespace ConsoleApp20.Scenes
         {
             _player.Health.Value = 5;
             _player.Mana.Value = 5;
-            SceneManager.Change("Forest3");
+            SceneManager.Change("Town1");
         }
 
         public override void Exit()
@@ -145,7 +152,7 @@ namespace ConsoleApp20.Scenes
             _player.OnDialogueClosed -= HandleDialogueClosed;
             _player.OnEnterExit = null;
             _player.OnStepConsumed -= HandleStepConsumed;
-
+            _player.OnRestartRequested -= RestartLevel;
         }
 
         private void PrintField()
