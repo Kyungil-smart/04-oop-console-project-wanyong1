@@ -71,6 +71,7 @@ public class GameManager
         SceneManager.AddScene("PrveBoss", new PrveBoss());
         SceneManager.AddScene("BossScene", new ForestBossScene(_player));
         SceneManager.AddScene("Finsh", new Finsh());
+        SceneManager.AddScene("TitleScene", new TitleScene());
         SceneManager.Change("Title");
         
         Debug.Log("게임 데이터 초기화 완료");

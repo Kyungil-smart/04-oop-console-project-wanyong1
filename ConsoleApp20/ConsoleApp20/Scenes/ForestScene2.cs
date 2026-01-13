@@ -13,9 +13,9 @@ namespace ConsoleApp20.Scenes
         private Tile[,] _field = new Tile[10, 10];
         private PlayerCharacter _player;
         private ExitDevice _exit;
-        private Vector _exitPos = new Vector(8, 1); // 원하는 출구 좌표로 바꿔
+        private Vector _exitPos = new Vector(8, 1); 
         private bool _pendingExitActivation;
-        private const int STEP_LIMIT = 16; // 원하는 제한 횟수로 바꿔
+        private const int STEP_LIMIT = 16; 
         private int _stepsLeft;
         private MonsterSpawn _monsterSpawn;
         private bool _HealthZero;

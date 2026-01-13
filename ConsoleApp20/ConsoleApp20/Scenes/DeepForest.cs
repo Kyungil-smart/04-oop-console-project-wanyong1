@@ -45,7 +45,7 @@ namespace ConsoleApp20.Scenes
                 }
             };
 
-            // 출구(처음엔 비활성)
+            // 출구
             _exit = new ExitDevice(false);
             _exit.Position = _exitPos;
             _field[_exitPos.Y, _exitPos.X].OnTileObject = _exit;
@@ -53,7 +53,7 @@ namespace ConsoleApp20.Scenes
             // 출구 진입 시 씬 이동
             _player.OnEnterExit = GoToForest;
 
-            // 대화 이벤트: 발자국과 대화 후 출구 활성화
+            //발자국과 대화 후 출구 활성화
             _player.OnDialogueOpened += HandleDialogueOpened;
             _player.OnDialogueClosed += HandleDialogueClosed;
         }

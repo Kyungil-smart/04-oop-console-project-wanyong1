@@ -43,7 +43,7 @@ namespace ConsoleApp20.Scenes
                 _wolfNpc.OnTransformRequested += TransformToBoss;
                 _field[_wolfNpc.Position.Y, _wolfNpc.Position.X].OnTileObject = _wolfNpc;
 
-                // 플레이어 턴(행동)마다 보스 근접공격 체크
+                // 플레이어 턴 마다 보스 근접공격 체크
                 _player.OnMoved += HandlePlayerMoved;
                 _player.OnAttacked += HandlePlayerAttacked;
 
@@ -190,7 +190,7 @@ namespace ConsoleApp20.Scenes
                 if (inRange && !_wasInBossRange)
                     BossAttack();
 
-                // 범위 상태 갱신 (밖으로 나가면 다시 ‘진입 즉시 공격’ 가능)
+                // 범위 상태 갱신
                 _wasInBossRange = inRange;
             }
 
@@ -198,7 +198,7 @@ namespace ConsoleApp20.Scenes
             {
                 if (!_battleStarted || _boss == null || _boss.IsDead) return;
 
-                // 플레이어가 공격하면 즉시 재공격(8방 범위일 때만)
+                // 플레이어가 공격하면 즉시 재공격
                 if (IsAdjacent8(_player.Position, _boss.Position))
                     BossAttack();
             }
@@ -214,7 +214,7 @@ namespace ConsoleApp20.Scenes
                 int dx = Math.Abs(a.X - b.X);
                 int dy = Math.Abs(a.Y - b.Y);
 
-                // 8방 인접(대각 포함), 같은 칸 제외
+                // 8방 인접, 같은 칸 제외
                 return dx <= 1 && dy <= 1 && !(dx == 0 && dy == 0);
             }
 

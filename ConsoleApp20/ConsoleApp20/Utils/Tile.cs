@@ -17,7 +17,6 @@ public struct Tile
     // 자신의 좌표
     public Vector Position { get; set; }
     
-    //public bool HasGameObject => OnTileObject != null || FloorObject != null;
 
     public Tile(Vector position)
     {
