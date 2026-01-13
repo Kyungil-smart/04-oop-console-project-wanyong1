@@ -21,6 +21,7 @@ namespace ConsoleApp20.GameObjects
             //}
             if (player.Health.Value <= 0) return;
             player.Health.Value -= 1;
+            player.ConsumeStep(1);
             
         }
 

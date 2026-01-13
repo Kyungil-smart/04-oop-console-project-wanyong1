@@ -189,6 +189,7 @@ namespace ConsoleApp20.Scenes
 
             if (_field[targetPos.Y, targetPos.X].isWall) return false;
             if (_field[targetPos.Y, targetPos.X].OnTileObject != null) return false;
+            if (_field[targetPos.Y, targetPos.X].FloorObject is Spike) return false;
 
             _field[blockPos.Y, blockPos.X].OnTileObject = null;
             _field[targetPos.Y, targetPos.X].OnTileObject = block;

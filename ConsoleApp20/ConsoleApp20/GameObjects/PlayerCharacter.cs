@@ -216,7 +216,7 @@ public class PlayerCharacter : GameObject
         Field[nextPos.Y, nextPos.X].OnTileObject = this;
         Position = nextPos;
 
-        OnStepConsumed?.Invoke();
+        ConsumeStep(1);
         var floorObj = Field[Position.Y, Position.X].FloorObject;
         if (floorObj is IInteractable interactable)
         {
@@ -403,6 +403,14 @@ public class PlayerCharacter : GameObject
             }
         }
     }
+    public void ConsumeStep(int amount = 1)
+    {
+        if (amount <= 0) return;
+
+        for (int i = 0; i < amount; i++)
+            OnStepConsumed?.Invoke();
+    }
+
 
 
 

@@ -98,7 +98,7 @@ namespace ConsoleApp20.Scenes
 
             _field[1, 1].OnTileObject = new Npc()
             {
-                Name = "길을 잃은 소년",
+                Name = "길을 잃은 소년2",
                 Pages = new[]
                 {
                 "NPC : 살려주세요.",
@@ -107,8 +107,8 @@ namespace ConsoleApp20.Scenes
                 "NPC : 제 친구는 어디에 있나요?",
                 "My : 친구는 이미 마을에 안전하게 도착했어",
                 "NPC : 정말요? 고마워요!",
-                "NPC : 더 깊은 숲으로 가면 친구가 더 있을거에요 그 친구들도 찾아주세요",
-                "(저기 출구가 활성화 되었다 저기로 가야겠어!)"
+                "MY : (숲에 들어간 모든 아이들은 마을로 보냈다,!)",
+                "MY : (일단 마을로 돌아가자",
 
                 }
             };
@@ -138,7 +138,7 @@ namespace ConsoleApp20.Scenes
         {
             _player.Health.Value = 5;
             _player.Mana.Value = 5;
-            SceneManager.Change("Town1");
+            SceneManager.Change("NewTownScene");
         }
 
         public override void Exit()

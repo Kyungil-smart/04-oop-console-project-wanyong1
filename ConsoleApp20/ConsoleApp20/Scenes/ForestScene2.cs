@@ -198,7 +198,7 @@ namespace ConsoleApp20.Scenes
         private void HandleDialogueOpened(string speaker)
         {
            
-            if (speaker == "??????")
+            if (speaker == "길은잃은 소년 1")
                 _pendingExitActivation = true;
         }
 

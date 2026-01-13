@@ -12,7 +12,6 @@ public class TownScene : Scene
     private PlayerCharacter _player;
     public TownScene(PlayerCharacter player) => Init(player);
     private Vector _exitPos; // 출구 위치
-    private const string NEXT_SCENE_KEY = "Forest"; //다음 씬 키
     public void Init(PlayerCharacter player)
     {
         _player = player;
@@ -62,7 +61,7 @@ public class TownScene : Scene
              "마을 촌장 : …처음 보는 얼굴이군.\n이 마을엔 외지인이 드문데, 이런 곳까지 오다니.",
              "마을 촌장 : 갑작스러운 말이지만…\n무례하게 들리지 않기를 바란다.\n부탁 하나를 해도 되겠나?",
              "MY : 물론이지, 무슨 일이야?",
-             "마을 촌장 : 며칠 전, 아이 몇 명이 숲 안으로 들어갔네.\n해가 지도록 돌아오지 않았지.\n마을 사람들 모두가 걱정하고 있어.",
+             "마을 촌장 : 며칠 전, 아이 3명이 숲 안으로 들어갔네.\n해가 지도록 돌아오지 않았지.\n마을 사람들 모두가 걱정하고 있어.",
              "그 숲은 평범한 숲이 아니네.\n길이 자주 바뀌고,\n익숙한 사람일수록 더 쉽게 길을 잃는다네.",
              "그래서… 우리 마을 사람들은\n섣불리 안으로 들어갈 수가 없지.\n오히려 외지인이 더 적합할지도 몰라.",
              "괜찮다면 부탁하고 싶네.\n숲에 들어가 아이들을 찾아주겠나?",

@@ -65,6 +65,7 @@ public class GameManager
         SceneManager.AddScene("Forest", new ForestScene(_player));
         SceneManager.AddScene("Forest2", new ForestScene2(_player));
         SceneManager.AddScene("Forest3", new ForestScene3(_player));
+        SceneManager.AddScene("NewTownScene", new NewTownScene(_player));
 
         SceneManager.Change("Title");
         
