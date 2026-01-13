@@ -1,4 +1,4 @@
-<img width="603" height="297" alt="화면 캡처 2026-01-13 150541" src="https://github.com/user-attachments/assets/60e8f699-49b3-42ea-b0eb-6f5bf6126f64" />[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=22157947&assignment_repo_type=AssignmentRepo)
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=22157947&assignment_repo_type=AssignmentRepo)
 # 🎮 콘솔 게임 프로젝트  
 ## 제목 - 아무튼 RPG
 
