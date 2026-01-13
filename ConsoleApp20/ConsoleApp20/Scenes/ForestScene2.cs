@@ -18,7 +18,7 @@ namespace ConsoleApp20.Scenes
         private const int STEP_LIMIT = 16; // 원하는 제한 횟수로 바꿔
         private int _stepsLeft;
         private MonsterSpawn _monsterSpawn;
-
+        private bool _HealthZero;
         public ForestScene2(PlayerCharacter player)
         {
             Init(player);
@@ -89,7 +89,7 @@ namespace ConsoleApp20.Scenes
 
             _field[1, 4].OnTileObject = new Npc()
             {
-                Name = "??????",
+                Name = "길은잃은 소년 1",
                 Pages = new[]
                 {
                 "NPC : 살려주세요.",
@@ -107,6 +107,8 @@ namespace ConsoleApp20.Scenes
             _exit.Position = _exitPos;
             _field[_exitPos.Y, _exitPos.X].OnTileObject = _exit;
 
+            _player.OnEnterExit = GoToForest;
+
             _player.OnDialogueOpened += HandleDialogueOpened;
             _player.OnDialogueClosed += HandleDialogueClosed;
             _player.OnRestartRequested += RestartLevel;
@@ -114,7 +116,18 @@ namespace ConsoleApp20.Scenes
 
         public override void Update()
         {
+            if (_HealthZero)
+            {
+                return;
+            }
             _player.Update();
+            if (_player.Health.Value <= 0)
+            {
+                _HealthZero = true;
+                RestartLevel();
+                _HealthZero = false;
+
+            }
         }
 
         public override void Render()
@@ -182,7 +195,7 @@ namespace ConsoleApp20.Scenes
 
             if (_field[targetPos.Y, targetPos.X].isWall) return false;
             if (_field[targetPos.Y, targetPos.X].OnTileObject != null) return false;
-
+            if (_field[targetPos.Y, targetPos.X].FloorObject is Spike) return false;
 
             _field[blockPos.Y, blockPos.X].OnTileObject = null;
             _field[targetPos.Y, targetPos.X].OnTileObject = block;

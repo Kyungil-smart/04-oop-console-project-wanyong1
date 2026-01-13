@@ -15,8 +15,8 @@ namespace ConsoleApp20.Utils
 
         public bool IsActive { get; private set; }
 
-        public event Action OnOpened;
-        public event Action OnClosed;
+        public event Action<string> OnOpened;
+        public event Action<string> OnClosed;
 
         public DialogueBox()
         {
@@ -34,12 +34,13 @@ namespace ConsoleApp20.Utils
 
             IsActive = true;
             BuildMenu();
-            OnOpened?.Invoke();
+            OnOpened?.Invoke(_speaker);
         }
 
         public void Close()
         {
             if (!IsActive) return;
+            string closedSpeaker = _speaker;
 
             IsActive = false;
             _speaker = null;
@@ -49,7 +50,7 @@ namespace ConsoleApp20.Utils
             _menu = new MenuList();
             _menu.IsCursorVisible = false;
 
-            OnClosed?.Invoke();
+            OnClosed?.Invoke(closedSpeaker);
         }
 
         public void Update()

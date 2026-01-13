@@ -43,20 +43,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GameObjects\BossWolfMonster .cs" />
     <Compile Include="GameObjects\GameObject.cs" />
     <Compile Include="GameObjects\Item.cs" />
     <Compile Include="GameObjects\ManaPotion.cs" />
     <Compile Include="GameObjects\Monster.cs" />
+    <Compile Include="GameObjects\MysticAmulet.cs" />
     <Compile Include="GameObjects\Npc.cs" />
     <Compile Include="GameObjects\PlayerCharacter.cs" />
     <Compile Include="GameObjects\Potion.cs" />
     <Compile Include="GameObjects\PushBlock.cs" />
     <Compile Include="GameObjects\Spike.cs" />
+    <Compile Include="GameObjects\WolfNPC.cs" />
     <Compile Include="Managers\GameManager.cs" />
     <Compile Include="Managers\InputManager.cs" />
     <Compile Include="Managers\SceneManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scenes\Finsh.cs" />
+    <Compile Include="Scenes\ForestBossScene.cs" />
+    <Compile Include="Scenes\DeepForest.cs" />
     <Compile Include="Scenes\ForestScene.cs" />
     <Compile Include="Scenes\ForestScene2.cs" />
     <Compile Include="Scenes\ForestScene3.cs" />
@@ -64,6 +70,7 @@
     <Compile Include="Scenes\ManualScene.cs" />
     <Compile Include="Scenes\NewTownScene.cs" />
     <Compile Include="Scenes\PrologueScene.cs" />
+    <Compile Include="Scenes\PrveBoss.cs" />
     <Compile Include="Scenes\Scene.cs" />
     <Compile Include="Scenes\StoryScene.cs" />
     <Compile Include="Scenes\TitleScene.cs" />

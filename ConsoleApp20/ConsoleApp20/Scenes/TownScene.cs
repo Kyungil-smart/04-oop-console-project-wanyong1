@@ -10,7 +10,10 @@ public class TownScene : Scene
 {
     private Tile[,] _field = new Tile[20, 20];
     private PlayerCharacter _player;
-    public TownScene(PlayerCharacter player) => Init(player);
+    public TownScene(PlayerCharacter player)
+    {
+        Init(player);
+    }
     private Vector _exitPos; // 출구 위치
     public void Init(PlayerCharacter player)
     {
@@ -112,5 +115,6 @@ public class TownScene : Scene
     private void GoToForest()
     {
         SceneManager.Change("Forest");
+        //SceneManager.Change("NewTownScene");
     }
 }

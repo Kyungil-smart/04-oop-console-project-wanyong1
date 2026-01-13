@@ -18,7 +18,7 @@ namespace ConsoleApp20.Scenes
         private const int STEP_LIMIT = 21; 
         private int _stepsLeft;
         private MonsterSpawn _monsterSpawn;
-
+        private bool _HealthZero;
         public ForestScene3(PlayerCharacter player)
         {
             Init(player);
@@ -124,7 +124,18 @@ namespace ConsoleApp20.Scenes
 
         public override void Update()
         {
+            if (_HealthZero)
+            {
+                return;
+            }
             _player.Update();
+            if (_player.Health.Value <= 0)
+            {
+                _HealthZero = true;
+                RestartLevel();
+                _HealthZero = false;
+
+            }
         }
 
         public override void Render()
@@ -209,7 +220,7 @@ namespace ConsoleApp20.Scenes
         private void HandleDialogueOpened(string speaker)
         {
 
-            if (speaker == "길을 잃은 소년")
+            if (speaker == "길을 잃은 소년2")
                 _pendingExitActivation = true;
         }
 

@@ -5,12 +5,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 public class NewTownScene : Scene
 {
     private Tile[,] _field = new Tile[20, 20];
     private PlayerCharacter _player;
-    public NewTownScene(PlayerCharacter player) => Init(player);
+    private bool _amuletGiven;
+    private bool _pendingExitActivation;
+    private ExitDevice _exit;
+    public NewTownScene(PlayerCharacter player) 
+    {
+        Init(player);
+    }
     private Vector _exitPos; // 출구 위치
     public void Init(PlayerCharacter player)
     {
@@ -46,11 +53,18 @@ public class NewTownScene : Scene
 
     public override void Enter()
     {
+        _player.OnDialogueClosedWithSpeaker += HandleDialogueClosedWithSpeaker;
+        _player.OnDialogueOpened += HandleDialogueOpened;
+        _player.OnDialogueClosed += HandleDialogueClosed;
+        _player.OnDialogueClosedWithSpeaker += HandleDialogueClosedWithSpeaker;
+
         _player.Field = _field;
         _player.Position = new Vector(4, 2);
         _field[_player.Position.Y, _player.Position.X].OnTileObject = _player;
 
-        _field[_exitPos.Y, _exitPos.X].OnTileObject = new ExitDevice(true);
+        _exit = new ExitDevice(false);
+        _exit.Position = _exitPos;
+        _field[_exitPos.Y, _exitPos.X].OnTileObject = _exit;
 
 
         _field[2, 10].OnTileObject = new Npc()
@@ -124,6 +138,19 @@ public class NewTownScene : Scene
 
         _player.OnEnterExit = GoToForest;
     }
+    private void HandleDialogueClosedWithSpeaker(string speaker)
+    {
+        //  촌장만 +  1회만
+        if (_player.TownChiefRewardGiven) return;
+        if (speaker != "마을 촌장") return;
+
+        _player.TownChiefRewardGiven = true;
+
+        _player.AddItem(new MysticAmulet());
+        _player.AddItem(new Potion() { Name = "체력 포션" });
+        _player.AddItem(new ManaPotion() { Name = "마나 포션" });
+    }
+
 
     public override void Update()
     {
@@ -141,6 +168,8 @@ public class NewTownScene : Scene
         _field[_player.Position.Y, _player.Position.X].OnTileObject = null;
         _player.Field = null;
         _player.OnEnterExit = null;
+        _player.OnDialogueOpened -= HandleDialogueOpened;
+        _player.OnDialogueClosed -= HandleDialogueClosed;
     }
 
     private void PrintField()
@@ -156,6 +185,21 @@ public class NewTownScene : Scene
     }
     private void GoToForest()
     {
-        SceneManager.Change("Forest");
+        SceneManager.Change("DeepForest");
+    }
+    private void HandleDialogueOpened(string speaker)
+    {
+
+        if (speaker == "마을 촌장")
+            _pendingExitActivation = true;
+    }
+
+    private void HandleDialogueClosed()
+    {
+        if (!_pendingExitActivation) return;
+        _pendingExitActivation = false;
+
+        if (_exit != null && !_exit.IsActive)
+            _exit.SetActive(true); // ☆ -> ★
     }
 }

@@ -1,4 +1,5 @@
 ﻿using ConsoleApp20.Scenes;
+using ConsoleApp20.Scenes.ConsoleApp20.Scenes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -66,7 +67,10 @@ public class GameManager
         SceneManager.AddScene("Forest2", new ForestScene2(_player));
         SceneManager.AddScene("Forest3", new ForestScene3(_player));
         SceneManager.AddScene("NewTownScene", new NewTownScene(_player));
-
+        SceneManager.AddScene("DeepForest", new DeepForest(_player));
+        SceneManager.AddScene("PrveBoss", new PrveBoss());
+        SceneManager.AddScene("BossScene", new ForestBossScene(_player));
+        SceneManager.AddScene("Finsh", new Finsh());
         SceneManager.Change("Title");
         
         Debug.Log("게임 데이터 초기화 완료");

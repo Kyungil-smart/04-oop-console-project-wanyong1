@@ -12,9 +12,15 @@ public class PlayerCharacter : GameObject
 {
     public ObservableProperty<int> Health = new ObservableProperty<int>(5);
     public ObservableProperty<int> Mana = new ObservableProperty<int>(5);
+    public event Action<string> OnDialogueClosedWithSpeaker;
+
+    public bool TownChiefRewardGiven { get; set; } = false;//마을 보상
 
     public event Action<string> OnDialogueOpened;
     public event Action OnDialogueClosed;
+
+    public event Action OnMoved;
+    public event Action OnAttacked;
     public event Action OnStepConsumed;
 
     public Action OnEnterExit;
@@ -22,6 +28,7 @@ public class PlayerCharacter : GameObject
 
     private string _healthGauge;
     private string _manaGauge;
+    public bool HasMysticAura { get; set; } = false; // 부적 착용 여부
 
     private const int HUD_X = 1; 
     private const int HUD_Y = 1; 
@@ -29,7 +36,8 @@ public class PlayerCharacter : GameObject
     private DialogueBox _dialogue;
     public event Action OnRestartRequested;
 
-
+    private string _hudMessage = "";
+    private int _hudMessageFrame = 0;
 
     public Tile[,] Field { get; set; }
     private Inventory _inventory;
@@ -50,15 +58,17 @@ public class PlayerCharacter : GameObject
 
         //대사
         _dialogue = new DialogueBox();
-        _dialogue.OnOpened += () =>
+        _dialogue.OnOpened += (_speaker) =>
         {
             IsActiveControl = false;
         };
 
-        _dialogue.OnClosed += () =>
+        _dialogue.OnClosed += (_speaker) =>
         {
             IsActiveControl = !_inventory.IsActive;
             if (OnDialogueClosed != null) OnDialogueClosed();
+            OnDialogueClosedWithSpeaker?.Invoke(_speaker);
+
         };
     }
 
@@ -200,23 +210,24 @@ public class PlayerCharacter : GameObject
             // NPC는 통과 불가
             if (nextTileObject is ITalkable) return;
 
+            // 몬스터(데미지 받는 객체)는 통과 불가 (보스 포함)
+            if (nextTileObject is IDamageable) return;
+
             // 아이템 상호작용
             if (nextTileObject is IInteractable)
             {
                 (nextTileObject as IInteractable).Interact(this);
             }
 
-            if(nextTileObject is Monster m)
-            {
-                return;
-            }
         }
 
         Field[Position.Y, Position.X].OnTileObject = null;
         Field[nextPos.Y, nextPos.X].OnTileObject = this;
         Position = nextPos;
 
+        OnMoved?.Invoke();//공격
         ConsumeStep(1);
+
         var floorObj = Field[Position.Y, Position.X].FloorObject;
         if (floorObj is IInteractable interactable)
         {
@@ -247,8 +258,6 @@ public class PlayerCharacter : GameObject
 
     public void DrawManaGauge()
     {
-        //Console.SetCursorPosition(Position.X - 2, Position.Y - 1);
-        //_healthGauge.Print(ConsoleColor.Blue);
         int x = 0;
         int y = Console.WindowHeight - 1;
 
@@ -260,6 +269,11 @@ public class PlayerCharacter : GameObject
         Console.SetCursorPosition(x, y);
         "MP ".Print(ConsoleColor.White);
         _manaGauge.Print(ConsoleColor.Blue);
+    }
+    public void SetHudMessage(string msg, int frame = 40)
+    {
+        _hudMessage = msg ?? "";
+        _hudMessageFrame = frame;
     }
 
     public void DrawHealthGauge()
@@ -276,6 +290,22 @@ public class PlayerCharacter : GameObject
         Console.SetCursorPosition(x, y);
         "HP ".Print(ConsoleColor.White);
         _healthGauge.Print(ConsoleColor.Red);
+
+        int msgX = x + 3 + _healthGauge.Length + 2; 
+        if (msgX < Console.WindowWidth)
+        {
+            Console.SetCursorPosition(msgX, y);
+            Console.Write(new string(' ', Console.WindowWidth - msgX));
+
+            // 메시지 출력
+            Console.SetCursorPosition(msgX, y);
+            if (_hudMessageFrame > 0 && !string.IsNullOrEmpty(_hudMessage))
+            {
+                _hudMessage.Print(ConsoleColor.Yellow);
+                _hudMessageFrame--;
+                if (_hudMessageFrame <= 0) _hudMessage = "";
+            }
+        }
     }
 
     public void SetHealthGauge(int health)
@@ -365,10 +395,20 @@ public class PlayerCharacter : GameObject
                 
                 if (target is IDamageable d)
                 {
-                    d.TakeDamage(damage); 
+                    if(HasMysticAura && target is BossWolfMonster)
+                    {
+                        HasMysticAura = false;
+                        d.TakeDamage(9999);
+                    }
+                    else
+                    {
+                        d.TakeDamage(damage);
+                    }
+                       
                 }
             }
         }
+        OnAttacked?.Invoke();
         Thread.Sleep(200);
     }
     public void StartDialogue(string speaker, string[] pages)
