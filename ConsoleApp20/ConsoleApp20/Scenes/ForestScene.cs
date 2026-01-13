@@ -15,9 +15,10 @@ namespace ConsoleApp20.Scenes
         private ExitDevice _exit;
         private Vector _exitPos = new Vector(8, 1); 
         private bool _pendingExitActivation;
-        private const int STEP_LIMIT = 20; 
+        private const int STEP_LIMIT = 100; 
         private int _stepsLeft;
         private MonsterSpawn _monsterSpawn;
+        private bool _HealthZero;
 
         public ForestScene(PlayerCharacter player)
         {
@@ -66,14 +67,17 @@ namespace ConsoleApp20.Scenes
             AddPushBlock(3, 3);
             AddPushBlock(2, 4);
             AddPushBlock(1, 4);
-                
-      
-
             AddPushBlock(12, 4);
             _monsterSpawn.Spawn(_field, new Vector(7, 2),5);
             _monsterSpawn.Spawn(_field, new Vector(7, 2),5);
             _monsterSpawn.Spawn(_field, new Vector(7, 5),5);
             _monsterSpawn.Spawn(_field, new Vector(7, 4),5);
+
+            _field[3, 8].FloorObject = new Spike();
+            //{
+            //    Position = new Vector(8, 3)   // x=8, y=3
+            //};
+
 
             _field[3, 7].OnTileObject = new Npc()
             {
@@ -108,7 +112,18 @@ namespace ConsoleApp20.Scenes
 
         public override void Update()
         {
+            if (_HealthZero)
+            {
+                return;
+            }
             _player.Update();
+            if(_player.Health.Value <= 0)
+            {
+                _HealthZero = true;
+                RestartLevel();
+                _HealthZero = false;
+
+            }
         }
 
         public override void Render()

@@ -261,7 +261,7 @@ namespace ConsoleApp20.Scenes
             if (y < 0) return;
 
             Console.SetCursorPosition(x, y);
-            $"STEP : {_stepsLeft}/{STEP_LIMIT}   ".Print();
+            $"STEP : {_stepsLeft}/{STEP_LIMIT}".Print();
         }
 
 

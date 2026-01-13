@@ -7,7 +7,10 @@ using System.Threading.Tasks;
 public class Potion : Item, IInteractable
 {
 
-    public Potion() => Init();
+    public Potion()
+    {
+        Init();
+    }
     
     private void Init()
     {

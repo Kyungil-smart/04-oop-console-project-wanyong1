@@ -215,7 +215,13 @@ public class PlayerCharacter : GameObject
         Field[Position.Y, Position.X].OnTileObject = null;
         Field[nextPos.Y, nextPos.X].OnTileObject = this;
         Position = nextPos;
-        if (OnStepConsumed != null) OnStepConsumed();
+
+        OnStepConsumed?.Invoke();
+        var floorObj = Field[Position.Y, Position.X].FloorObject;
+        if (floorObj is IInteractable interactable)
+        {
+            interactable.Interact(this);
+        }
 
     }
 

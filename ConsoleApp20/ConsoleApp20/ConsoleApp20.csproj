@@ -51,6 +51,7 @@
     <Compile Include="GameObjects\PlayerCharacter.cs" />
     <Compile Include="GameObjects\Potion.cs" />
     <Compile Include="GameObjects\PushBlock.cs" />
+    <Compile Include="GameObjects\Spike.cs" />
     <Compile Include="Managers\GameManager.cs" />
     <Compile Include="Managers\InputManager.cs" />
     <Compile Include="Managers\SceneManager.cs" />

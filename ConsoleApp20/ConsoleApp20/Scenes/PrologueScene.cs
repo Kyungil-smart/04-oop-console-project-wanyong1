@@ -51,7 +51,7 @@ namespace ConsoleApp20.Scenes
         {
             if (InputManager.GetKey(ConsoleKey.Enter)) 
             {
-                SceneManager.Change("Forest3");
+                SceneManager.Change("Forest");
             }       
         }
         public override void Render()
