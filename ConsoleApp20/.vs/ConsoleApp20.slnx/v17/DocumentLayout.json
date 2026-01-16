@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\consoleapp20\\utils\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|c:\\users\\chy70\\documents\\github\\04-oop-console-project-wanyong1\\consoleapp20\\consoleapp20\\utils\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\utils\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\utils\\observableproperty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|c:\\users\\chy70\\documents\\github\\04-oop-console-project-wanyong1\\consoleapp20\\consoleapp20\\utils\\monsterspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\consoleapp20\\utils\\monsterspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{703A5BE7-274A-4D9B-968D-1001E0F442CA}|ConsoleApp20\\ConsoleApp20.csproj|solutionrelative:consoleapp20\\utils\\monsterspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -206,8 +206,7 @@
               "RelativeToolTip": "ConsoleApp20\\Utils\\ObservableProperty.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T08:34:16.887Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-08T08:34:16.887Z"
             },
             {
               "$type": "Document",
@@ -219,8 +218,7 @@
               "RelativeToolTip": "ConsoleApp20\\Utils\\Ractangle.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAYwBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T08:34:16.323Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-08T08:34:16.323Z"
             },
             {
               "$type": "Document",
@@ -232,8 +230,7 @@
               "RelativeToolTip": "ConsoleApp20\\Utils\\TextExtensions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T08:34:15.831Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-08T08:34:15.831Z"
             },
             {
               "$type": "Document",
@@ -243,7 +240,7 @@
               "RelativeDocumentMoniker": "ConsoleApp20\\Utils\\Tile.cs",
               "ToolTip": "C:\\Users\\chy70\\Documents\\GitHub\\04-oop-console-project-wanyong1\\ConsoleApp20\\ConsoleApp20\\Utils\\Tile.cs",
               "RelativeToolTip": "ConsoleApp20\\Utils\\Tile.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAYwBIAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwBoAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-08T08:34:15.202Z",
               "EditorCaption": ""
@@ -258,8 +255,7 @@
               "RelativeToolTip": "ConsoleApp20\\Utils\\MonsterSpawn.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAIwCIAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-11T11:26:45.752Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-11T11:26:45.752Z"
             },
             {
               "$type": "Document",
@@ -271,8 +267,7 @@
               "RelativeToolTip": "ConsoleApp20\\Utils\\MonsterRemove.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-11T11:27:06.757Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-11T11:27:06.757Z"
             },
             {
               "$type": "Document",
@@ -284,8 +279,7 @@
               "RelativeToolTip": "ConsoleApp20\\Utils\\MenuList.cs",
               "ViewState": "AgIAAGcAAAAAAAAAAAAAAHMAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T08:34:17.826Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-08T08:34:17.826Z"
             },
             {
               "$type": "Document",
@@ -297,8 +291,7 @@
               "RelativeToolTip": "ConsoleApp20\\Utils\\Maptest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-12T07:14:55.836Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-12T07:14:55.836Z"
             },
             {
               "$type": "Document",
@@ -310,8 +303,7 @@
               "RelativeToolTip": "ConsoleApp20\\Utils\\ITalkable.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-11T07:48:03.49Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-11T07:48:03.49Z"
             },
             {
               "$type": "Document",
@@ -323,8 +315,7 @@
               "RelativeToolTip": "ConsoleApp20\\Utils\\Inventory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T08:34:18.414Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-08T08:34:18.414Z"
             },
             {
               "$type": "Document",
@@ -336,8 +327,7 @@
               "RelativeToolTip": "ConsoleApp20\\Utils\\IInteractable.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T08:34:18.955Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-08T08:34:18.955Z"
             },
             {
               "$type": "Document",
@@ -349,8 +339,7 @@
               "RelativeToolTip": "ConsoleApp20\\Utils\\IDamageable.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-09T07:28:19.674Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-09T07:28:19.674Z"
             },
             {
               "$type": "Document",
@@ -362,8 +351,7 @@
               "RelativeToolTip": "ConsoleApp20\\Utils\\DialogueBox.cs",
               "ViewState": "AgIAAFEAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-11T07:48:54.023Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-11T07:48:54.023Z"
             },
             {
               "$type": "Document",
@@ -375,8 +363,7 @@
               "RelativeToolTip": "ConsoleApp20\\Utils\\Debug.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T08:34:19.422Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-08T08:34:19.422Z"
             },
             {
               "$type": "Document",
@@ -388,8 +375,7 @@
               "RelativeToolTip": "ConsoleApp20\\Scenes\\TitleScene.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-10T17:59:33.141Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-10T17:59:33.141Z"
             },
             {
               "$type": "Document",
@@ -401,8 +387,7 @@
               "RelativeToolTip": "ConsoleApp20\\Scenes\\TownScene.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAHQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T08:28:30.161Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-08T08:28:30.161Z"
             },
             {
               "$type": "Document",
@@ -414,8 +399,7 @@
               "RelativeToolTip": "ConsoleApp20\\Scenes\\StoryScene.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T08:34:00.308Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-08T08:34:00.308Z"
             },
             {
               "$type": "Document",
@@ -427,8 +411,7 @@
               "RelativeToolTip": "ConsoleApp20\\Scenes\\Scene.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T08:33:59.764Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-08T08:33:59.764Z"
             },
             {
               "$type": "Document",
@@ -440,8 +423,7 @@
               "RelativeToolTip": "ConsoleApp20\\Scenes\\PrveBoss.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T02:43:31.647Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-13T02:43:31.647Z"
             },
             {
               "$type": "Document",
@@ -453,8 +435,7 @@
               "RelativeToolTip": "ConsoleApp20\\Scenes\\PrologueScene.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T04:00:55.352Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-13T04:00:55.352Z"
             },
             {
               "$type": "Document",
@@ -466,8 +447,7 @@
               "RelativeToolTip": "ConsoleApp20\\Scenes\\NewTownScene.cs",
               "ViewState": "AgIAAMcAAAAAAAAAAAAAAJMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T02:30:35.956Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-13T02:30:35.956Z"
             },
             {
               "$type": "Document",
@@ -479,8 +459,7 @@
               "RelativeToolTip": "ConsoleApp20\\Scenes\\ManualScene.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-10T18:01:05.184Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-10T18:01:05.184Z"
             },
             {
               "$type": "Document",
@@ -492,8 +471,7 @@
               "RelativeToolTip": "ConsoleApp20\\Scenes\\LogScene.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T08:33:58.902Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-08T08:33:58.902Z"
             },
             {
               "$type": "Document",
@@ -505,8 +483,7 @@
               "RelativeToolTip": "ConsoleApp20\\Scenes\\ForestScene3.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-12T07:49:55.207Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-12T07:49:55.207Z"
             },
             {
               "$type": "Document",
@@ -518,8 +495,7 @@
               "RelativeToolTip": "ConsoleApp20\\Scenes\\ForestScene2.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-12T07:01:16.625Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-12T07:01:16.625Z"
             },
             {
               "$type": "Document",
@@ -531,8 +507,7 @@
               "RelativeToolTip": "ConsoleApp20\\Scenes\\ForestScene.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T02:33:51.823Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-13T02:33:51.823Z"
             },
             {
               "$type": "Document",
@@ -544,8 +519,7 @@
               "RelativeToolTip": "ConsoleApp20\\Scenes\\ForestBossScene.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T02:46:33.013Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-13T02:46:33.013Z"
             },
             {
               "$type": "Document",
@@ -557,8 +531,7 @@
               "RelativeToolTip": "ConsoleApp20\\Scenes\\Finsh.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAxwCkAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T04:02:08.532Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-13T04:02:08.532Z"
             },
             {
               "$type": "Document",
@@ -570,8 +543,7 @@
               "RelativeToolTip": "ConsoleApp20\\Scenes\\DeepForest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T02:33:49.202Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-13T02:33:49.202Z"
             },
             {
               "$type": "Document",
@@ -583,8 +555,7 @@
               "RelativeToolTip": "ConsoleApp20\\Managers\\SceneManager.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAkwB4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-09T06:25:54.48Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-09T06:25:54.48Z"
             },
             {
               "$type": "Document",
@@ -596,8 +567,7 @@
               "RelativeToolTip": "ConsoleApp20\\Managers\\InputManager.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAwB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T08:54:52.896Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-08T08:54:52.896Z"
             },
             {
               "$type": "Document",
@@ -609,8 +579,7 @@
               "RelativeToolTip": "ConsoleApp20\\Managers\\GameManager.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAvwEkAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T08:57:12.846Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-08T08:57:12.846Z"
             },
             {
               "$type": "Document",
